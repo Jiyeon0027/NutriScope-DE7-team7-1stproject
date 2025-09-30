@@ -1,0 +1,200 @@
+[
+  {
+    "id": 3,
+    "shop_name": "kurly",
+    "display_name": "프로틴 단백질 쉐이크 파우치 11종 (45g x 7개입) (택1)",
+    "brand_name": "플라이밀",
+    "original_price": 35000.0,
+    "sale_price": 22500,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/f8bef40e-abda-4a8b-a971-90202de06e4a.jpg",
+    "rank": 3,
+    "category": "프로틴"
+  },
+  {
+    "id": 5,
+    "shop_name": "kurly",
+    "display_name": "프로틴 단백질 쉐이크 630g 11종 (택1)",
+    "brand_name": "플라이밀",
+    "original_price": 45900.0,
+    "sale_price": 27900,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/ac37f6cc-ae9c-4b1c-9c91-97c15d2146e6.jpg",
+    "rank": 5,
+    "category": "프로틴"
+  },
+  {
+    "id": 8,
+    "shop_name": "kurly",
+    "display_name": "프로틴 단백질 드링크 7종 (6개입) (택1)",
+    "brand_name": "더단백",
+    "original_price": 15000.0,
+    "sale_price": 10900,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/e967a17e-ecb5-4b6f-bdc7-5d5e0e1ee940.jpg",
+    "rank": 8,
+    "category": "프로틴"
+  },
+  {
+    "id": 12,
+    "shop_name": "kurly",
+    "display_name": "잇더핏 프로틴 단백질 쉐이크 파우치 5종",
+    "brand_name": "델리스푼",
+    "original_price": 39500.0,
+    "sale_price": 25200,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/5d10a210-d269-4ef2-81af-bb47e9711cc2.jpg",
+    "rank": 12,
+    "category": "프로틴"
+  },
+  {
+    "id": 15,
+    "shop_name": "kurly",
+    "display_name": "잇더핏 단백질쉐이크 대용량 520g (5종)",
+    "brand_name": "델리스푼",
+    "original_price": 55000.0,
+    "sale_price": 34800,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/48152921-d52b-424d-aed2-a86af665876a.jpg",
+    "rank": 15,
+    "category": "프로틴"
+  },
+  {
+    "id": 16,
+    "shop_name": "kurly",
+    "display_name": "프로틴 단백질 버라이어티 기획팩 세트 6개입",
+    "brand_name": "더단백",
+    "original_price": 15000.0,
+    "sale_price": 10470,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/4980aeb7-7fde-4e68-974a-5c34f1890b34.jpg",
+    "rank": 16,
+    "category": "프로틴"
+  },
+  {
+    "id": 21,
+    "shop_name": "kurly",
+    "display_name": "밸런스밀 프로틴 쉐이크 1개 (5종)",
+    "brand_name": "CJ",
+    "original_price": 2980.0,
+    "sale_price": 2620,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/926f2ef4-975d-4885-ae1d-387f871f70d7.jpg",
+    "rank": 21,
+    "category": "프로틴"
+  },
+  {
+    "id": 37,
+    "shop_name": "kurly",
+    "display_name": "프로핏 웨이프로틴 드링크 3종 (12개입)",
+    "brand_name": "셀렉스",
+    "original_price": 38400.0,
+    "sale_price": 24900,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/84200ecc-ea89-4aff-bdcb-a2012e5046dd.jpg",
+    "rank": 37,
+    "category": "프로틴"
+  },
+  {
+    "id": 39,
+    "shop_name": "kurly",
+    "display_name": "잇더핏 단백질쉐이크 스타터패키지(5입)",
+    "brand_name": "델리스푼",
+    "original_price": 28300.0,
+    "sale_price": 19900,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/5a167f7e-211f-4dc3-8b28-63a9607c480d.jpg",
+    "rank": 39,
+    "category": "프로틴"
+  },
+  {
+    "id": 47,
+    "shop_name": "kurly",
+    "display_name": "리얼 초콜릿 프로틴바 4종 (1개입/9개입)",
+    "brand_name": "빼바",
+    "original_price": 28500.0,
+    "sale_price": 19900,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/fe88ada8-b4ec-4e08-be62-c3b911b64e62.jpg",
+    "rank": 47,
+    "category": "프로틴"
+  },
+  {
+    "id": 54,
+    "shop_name": "kurly",
+    "display_name": "프로핏 완전단백질 4종",
+    "brand_name": "셀렉스",
+    "original_price": 29900.0,
+    "sale_price": 27900,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/77119c1c-aba1-445c-aec0-eca86579f4cc.jpg",
+    "rank": 54,
+    "category": "프로틴"
+  },
+  {
+    "id": 58,
+    "shop_name": "kurly",
+    "display_name": "프로틴 드링크 미니 4종 (260mL X 6개입)",
+    "brand_name": "랩노쉬",
+    "original_price": 16200.0,
+    "sale_price": 11900,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3f3b455a-f097-4a92-a7e6-dbf22d95aa4e.jpg",
+    "rank": 58,
+    "category": "프로틴"
+  },
+  {
+    "id": 92,
+    "shop_name": "kurly",
+    "display_name": "마이밀 마시는 뉴프로틴 오리지널 16팩",
+    "brand_name": "대상웰라이프",
+    "original_price": 45000.0,
+    "sale_price": 19500,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/b4b10737-e3f4-4452-be24-1bba520820c9.jpg",
+    "rank": 92,
+    "category": "프로틴"
+  },
+  {
+    "id": 98,
+    "shop_name": "kurly",
+    "display_name": "프로 단백질바 3종 560g (택1)",
+    "brand_name": "닥터유",
+    "original_price": null,
+    "sale_price": 16000,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/e10449c1-4138-4af3-9558-fc1e5a07dc0f.jpg",
+    "rank": 98,
+    "category": "프로틴"
+  },
+  {
+    "id": 99,
+    "shop_name": "kurly",
+    "display_name": "단백질 쉐이크 스타터팩 9개입",
+    "brand_name": "플라이밀",
+    "original_price": 45000.0,
+    "sale_price": 29400,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/be5b39be-197a-4eab-bd72-dcfd78b922a7.jpg",
+    "rank": 99,
+    "category": "프로틴"
+  },
+  {
+    "id": 117,
+    "shop_name": "gmarket",
+    "display_name": "바디프로젝트 파로 효소 엠머밀 단백질 프리미엄 2g x 30포 3박스",
+    "brand_name": "위아즈",
+    "original_price": 55000.0,
+    "sale_price": 15210,
+    "image_url": "//gdimg.gmarket.co.kr/4440056500/still/300?ver=1758868937",
+    "rank": 17,
+    "category": "프로틴"
+  },
+  {
+    "id": 153,
+    "shop_name": "gmarket",
+    "display_name": "마이밀 뉴프로틴 오리지널 190ml 24입 x 1박스",
+    "brand_name": "대상웰라이프",
+    "original_price": 31000.0,
+    "sale_price": 24350,
+    "image_url": "//gdimg.gmarket.co.kr/3043489617/still/300?ver=1753682802",
+    "rank": 53,
+    "category": "프로틴"
+  },
+  {
+    "id": 195,
+    "shop_name": "gmarket",
+    "display_name": "후디스 초유단백질 280g 2+1개(총3개)+보틀+쇼핑백",
+    "brand_name": "일동후디스",
+    "original_price": 31110.0,
+    "sale_price": 24900,
+    "image_url": "//gdimg.gmarket.co.kr/2209695067/still/300?ver=1759104316",
+    "rank": 95,
+    "category": "프로틴"
+  }
+]

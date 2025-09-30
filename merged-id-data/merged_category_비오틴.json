@@ -1,0 +1,24 @@
+[
+  {
+    "id": 231,
+    "shop_name": "iHerb",
+    "display_name": "비오틴 5000mcg 베지 캡슐 120정",
+    "brand_name": "NOW Foods",
+    "original_price": 12435.0,
+    "sale_price": 12435,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now00474/u/27.jpg",
+    "rank": 31,
+    "category": "비오틴"
+  },
+  {
+    "id": 274,
+    "shop_name": "iHerb",
+    "display_name": "비오틴 10000mcg 120정",
+    "brand_name": "21st Century",
+    "original_price": 11419.0,
+    "sale_price": 11419,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cen/cen27757/u/61.jpg",
+    "rank": 74,
+    "category": "비오틴"
+  }
+]

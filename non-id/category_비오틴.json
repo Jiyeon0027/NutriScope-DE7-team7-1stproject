@@ -1,0 +1,42 @@
+[
+  {
+    "shop_name": "iHerb",
+    "display_name": "비오틴 5000mcg 베지 캡슐 120정",
+    "brand_name": "NOW Foods",
+    "original_price": 12435,
+    "sale_price": 12435,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now00474/u/27.jpg",
+    "rank": 31,
+    "category": "비오틴"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "비오틴 10000mcg 120정",
+    "brand_name": "21st Century",
+    "original_price": 11419,
+    "sale_price": 11419,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cen/cen27757/u/61.jpg",
+    "rank": 74,
+    "category": "비오틴"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "비오틴 5000 (60일분)",
+    "brand_name": "나우푸드",
+    "original_price": 25000.0,
+    "sale_price": 11000,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/818004db-a389-4c5e-b736-c5f5a8484f10.jpg",
+    "rank": 126,
+    "category": "비오틴"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "비오틴 프리미엄 블랙 (60일분)",
+    "brand_name": "일양약품",
+    "original_price": 25000.0,
+    "sale_price": 9900,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/8c3b7490-5b4e-41b9-a38c-617518e2fdad.jpg",
+    "rank": 286,
+    "category": "비오틴"
+  }
+]

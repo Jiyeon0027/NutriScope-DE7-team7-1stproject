@@ -1,0 +1,156 @@
+[
+  {
+    "id": 18,
+    "shop_name": "kurly",
+    "display_name": "아카시아꿀 (1+등급)",
+    "brand_name": "올리",
+    "original_price": null,
+    "sale_price": 25800,
+    "image_url": "https://img-cf.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/shop/data/goods/1583143671390l0.jpg",
+    "rank": 18,
+    "category": "꿀"
+  },
+  {
+    "id": 22,
+    "shop_name": "kurly",
+    "display_name": "제주 벌꿀 2종",
+    "brand_name": "제주벌꿀영농조합법인",
+    "original_price": 7000.0,
+    "sale_price": 6850,
+    "image_url": "https://img-cf.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/shop/data/goods/1530683379515l0.jpg",
+    "rank": 22,
+    "category": "꿀"
+  },
+  {
+    "id": 29,
+    "shop_name": "kurly",
+    "display_name": "사양벌꿀 1kg",
+    "brand_name": "올가비오",
+    "original_price": 15900.0,
+    "sale_price": 13900,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/a2e1587b-571d-492f-9a07-48ac250e05bf.jpg",
+    "rank": 29,
+    "category": "꿀"
+  },
+  {
+    "id": 32,
+    "shop_name": "kurly",
+    "display_name": "아카시아 야생화 밤꿀 스틱 선물세트 30포",
+    "brand_name": "꿀마실",
+    "original_price": 34000.0,
+    "sale_price": 22900,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/1c9b3651-cfea-4e95-b9fe-6ddacfe28328.jpg",
+    "rank": 32,
+    "category": "꿀"
+  },
+  {
+    "id": 49,
+    "shop_name": "kurly",
+    "display_name": "아카시아꿀 스틱 10포",
+    "brand_name": "바로생활",
+    "original_price": 6800.0,
+    "sale_price": 6120,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/cdb38741-9802-4c27-b937-07ae88b6186e.jpg",
+    "rank": 49,
+    "category": "꿀"
+  },
+  {
+    "id": 59,
+    "shop_name": "kurly",
+    "display_name": "아카시아, 야생화, 밤꿀 미니스틱 10포 3종 (택1)",
+    "brand_name": "꿀마실",
+    "original_price": 8000.0,
+    "sale_price": 6500,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/61dd1800-4eb4-4e95-816c-425ba75f333b.jpg",
+    "rank": 59,
+    "category": "꿀"
+  },
+  {
+    "id": 61,
+    "shop_name": "kurly",
+    "display_name": "스위터 아카시아 꿀 허니바틀 500g",
+    "brand_name": "비마스터",
+    "original_price": 16500.0,
+    "sale_price": 14750,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/98aff99f-036f-47c1-ac4a-28ef94137c25.jpg",
+    "rank": 61,
+    "category": "꿀"
+  },
+  {
+    "id": 71,
+    "shop_name": "kurly",
+    "display_name": "사양벌꿀 1kg",
+    "brand_name": "가보팜스",
+    "original_price": 15900.0,
+    "sale_price": 12300,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/75eedb6d-823a-448f-b0b6-f1dd38fb578b.jpg",
+    "rank": 71,
+    "category": "꿀"
+  },
+  {
+    "id": 75,
+    "shop_name": "kurly",
+    "display_name": "프리미엄 아카시아꿀 2종 (500g/1kg)",
+    "brand_name": "가보팜스",
+    "original_price": 18900.0,
+    "sale_price": 16900,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/b9cbcbbb-3d05-4fe9-9153-1a1b0340c05c.jpg",
+    "rank": 75,
+    "category": "꿀"
+  },
+  {
+    "id": 82,
+    "shop_name": "kurly",
+    "display_name": "지리산 꿀 2종",
+    "brand_name": "지리산한봉영농조합",
+    "original_price": null,
+    "sale_price": 19800,
+    "image_url": "https://img-cf.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/shop/data/goods/1525329011108l0.jpg",
+    "rank": 82,
+    "category": "꿀"
+  },
+  {
+    "id": 111,
+    "shop_name": "gmarket",
+    "display_name": "햇꿀(설탕0%) 시골이야기 아카시아꿀 2.4kg/2025년/탄비-25.2 / 단 하루 특가",
+    "brand_name": "예천시골이야기",
+    "original_price": 48000.0,
+    "sale_price": 41200,
+    "image_url": "//gdimg.gmarket.co.kr/681524167/still/300?ver=1758864170",
+    "rank": 11,
+    "category": "꿀"
+  },
+  {
+    "id": 158,
+    "shop_name": "gmarket",
+    "display_name": "지리산 자연꿀스틱 허니스틱 세트 10g x 90포",
+    "brand_name": "플로비즈",
+    "original_price": 46100.0,
+    "sale_price": 37100,
+    "image_url": "//gdimg.gmarket.co.kr/3462361771/still/300?ver=1757665365",
+    "rank": 58,
+    "category": "꿀"
+  },
+  {
+    "id": 189,
+    "shop_name": "gmarket",
+    "display_name": "한울벌꿀 국내산 아카시아꿀 2.4kg 사양벌꿀 무료배송/단 하루 특가",
+    "brand_name": "농업회사법인선흥",
+    "original_price": 33600.0,
+    "sale_price": 26690,
+    "image_url": "//gdimg.gmarket.co.kr/1972691530/still/300?ver=1759069985",
+    "rank": 89,
+    "category": "꿀"
+  },
+  {
+    "id": 379,
+    "shop_name": "Kakao Gift",
+    "display_name": "\"3대째 대를 이어온\" 지리산 모향골 자연 벌꿀스틱 선물세트 10g x 30포 (아카시아꿀 야생화꿀 밤꿀 각10포) 쇼핑백포함",
+    "brand_name": "꿀",
+    "original_price": 31900.0,
+    "sale_price": 31900,
+    "image_url": "https://img1.kakaocdn.net/thumb/C320x320@2x.fwebp.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fproduct%2F20231203151643_5bc8757e5a554866bf1611bc8e40a3d3.jpg",
+    "rank": 79,
+    "category": "꿀"
+  }
+]

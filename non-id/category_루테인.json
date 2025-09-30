@@ -1,0 +1,129 @@
+[
+  {
+    "shop_name": "iHerb",
+    "display_name": "제아잔틴 루테인 함유 소프트젤 120정",
+    "brand_name": "Nutricost",
+    "original_price": 21285,
+    "sale_price": 21285,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/ncs/ncs67030/u/24.jpg",
+    "rank": 213,
+    "category": "루테인"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "루테인 Lutemax 2020 소프트젤 60정",
+    "brand_name": "Doctor's Best",
+    "original_price": 15870,
+    "sale_price": 15870,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/drb/drb00369/u/81.jpg",
+    "rank": 233,
+    "category": "루테인"
+  },
+  {
+    "shop_name": "gmarket",
+    "item_url": "https://item.gmarket.co.kr/Item?goodscode=4401031811",
+    "display_name": "리얼메디온 루테인 지아잔틴 아스타잔틴 3박스 초임계 초소형 식물성캡슐 플러스 눈건강 헤마토코쿠스 특가",
+    "original_price": 24970,
+    "sale_price": 17990,
+    "image_url": "//gdimg.gmarket.co.kr/4401031811/still/300?ver=1758789085",
+    "rank": 69,
+    "brand_name": "리얼메디온",
+    "category": "루테인"
+  },
+  {
+    "shop_name": "gmarket",
+    "item_url": "https://item.gmarket.co.kr/Item?goodscode=4421862306",
+    "display_name": "뉴트리코어 x Dr 맥스 알부민 3+1박스(루테인+쇼핑백증정~9/30+10%적립)",
+    "original_price": 140000,
+    "sale_price": 117000,
+    "image_url": "//gdimg.gmarket.co.kr/4421862306/still/300?ver=1758846315",
+    "rank": 76,
+    "brand_name": null,
+    "category": "루테인"
+  },
+  {
+    "shop_name": "gmarket",
+    "item_url": "https://item.gmarket.co.kr/Item?goodscode=1769370328",
+    "display_name": "식물성 루테인 지아잔틴 미니 180캡슐 (6개월분) + 미니100(30C) 증정",
+    "original_price": 42900,
+    "sale_price": 34470,
+    "image_url": "//gdimg.gmarket.co.kr/1769370328/still/300?ver=1758874867",
+    "rank": 92,
+    "brand_name": "안국건강",
+    "category": "루테인"
+  },
+  {
+    "shop_name": "gmarket",
+    "item_url": "https://item.gmarket.co.kr/Item?goodscode=3837403010",
+    "display_name": "아이클리어 루테인 지아잔틴 아스타잔틴 6박스(6개월)",
+    "original_price": 107000,
+    "sale_price": 75950,
+    "image_url": "//gdimg.gmarket.co.kr/3837403010/still/300?ver=1752589113",
+    "rank": 107,
+    "brand_name": "아이클리어",
+    "category": "루테인"
+  },
+  {
+    "shop_name": "gmarket",
+    "item_url": "https://item.gmarket.co.kr/Item?goodscode=2208075213",
+    "display_name": "마인트리 루테인지아잔틴 6박스 9/29특가+최대함량",
+    "original_price": 36000,
+    "sale_price": 24800,
+    "image_url": "//gdimg.gmarket.co.kr/2208075213/still/300?ver=1758870713",
+    "rank": 122,
+    "brand_name": "마인트리",
+    "category": "루테인"
+  },
+  {
+    "shop_name": "gmarket",
+    "item_url": "https://item.gmarket.co.kr/Item?goodscode=3520896605",
+    "display_name": "뉴트리코어 관절연골엔 철갑상어 뮤코다당단백 콘드로이친K 4+1박스(9/25~30특가+루테인+쇼핑백증정)",
+    "original_price": 308570,
+    "sale_price": 248400,
+    "image_url": "//gdimg.gmarket.co.kr/3520896605/still/300?ver=1758865770",
+    "rank": 156,
+    "brand_name": "뉴트리코어",
+    "category": "루테인"
+  },
+  {
+    "shop_name": "gmarket",
+    "item_url": "https://item.gmarket.co.kr/Item?goodscode=1749005337",
+    "display_name": "아이클리어 루테인 지아잔틴 6박스 (6개월분)",
+    "original_price": 75000,
+    "sale_price": 52500,
+    "image_url": "//gdimg.gmarket.co.kr/1749005337/still/300?ver=1752813995",
+    "rank": 190,
+    "brand_name": "아이클리어",
+    "category": "루테인"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "루테인미니100 (60일분)",
+    "brand_name": "안국건강",
+    "original_price": 15900.0,
+    "sale_price": 10970,
+    "image_url": "https://img-cf.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/shop/data/goods/1586321899204l0.jpg",
+    "rank": 105,
+    "category": "루테인"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "눈건강 엔 루테인 프리미엄 (60일분)",
+    "brand_name": "닥터팜",
+    "original_price": 23800.0,
+    "sale_price": 7900,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/758055bb-d82c-4702-a8e3-f4efac58218e.jpg",
+    "rank": 168,
+    "category": "루테인"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "아이클리어 루테인 지아잔틴 아스타잔틴 (30일분)",
+    "brand_name": "종근당건강",
+    "original_price": 25000.0,
+    "sale_price": 12900,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/0b745bf4-57e2-4d99-a270-2f6df466a5ad.jpg",
+    "rank": 182,
+    "category": "루테인"
+  }
+]

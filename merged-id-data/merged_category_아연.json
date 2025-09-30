@@ -1,0 +1,24 @@
+[
+  {
+    "id": 25,
+    "shop_name": "kurly",
+    "display_name": "아연셀레늄 (20일분)",
+    "brand_name": "바이오렉트라",
+    "original_price": 66000.0,
+    "sale_price": 56100,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/c38c92d3-2a1a-4e69-acb6-f078aad9c4c5.jpg",
+    "rank": 25,
+    "category": "아연"
+  },
+  {
+    "id": 254,
+    "shop_name": "iHerb",
+    "display_name": "PepZin GI® 아연 l-카르노신 복합체 베지 캡슐 120정",
+    "brand_name": "Doctor's Best",
+    "original_price": 27495.0,
+    "sale_price": 27495,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/drb/drb00136/u/82.jpg",
+    "rank": 54,
+    "category": "아연"
+  }
+]

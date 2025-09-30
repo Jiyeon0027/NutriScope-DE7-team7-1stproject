@@ -1,0 +1,1459 @@
+[
+  {
+    "shop_name": "iHerb",
+    "display_name": "고흡수 마그네슘 120정(1정당 100mg)",
+    "brand_name": "Doctor's Best",
+    "original_price": 13937,
+    "sale_price": 13937,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/drb/drb00025/u/107.jpg",
+    "rank": 5,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "고흡수 마그네슘 240정(1정당 100mg)",
+    "brand_name": "Doctor's Best",
+    "original_price": 24392,
+    "sale_price": 24392,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/drb/drb00087/u/198.jpg",
+    "rank": 8,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "칼슘 마그네슘 아연 + D3 90정",
+    "brand_name": "21st Century",
+    "original_price": 5794,
+    "sale_price": 5794,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cen/cen22263/u/27.jpg",
+    "rank": 9,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "Neuro-Mag 마그네슘 L-트레온산 베지 캡슐 90정(캡슐당 48mg)",
+    "brand_name": "Life Extension",
+    "original_price": 46134,
+    "sale_price": 46134,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/lex/lex16039/u/276.jpg",
+    "rank": 13,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "Full Spectrum® 아슈와간다 비건 캡슐 100정(캡슐당 450mg)",
+    "brand_name": "Swanson",
+    "original_price": 10663,
+    "sale_price": 10663,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/swv/swv01957/u/72.jpg",
+    "rank": 15,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "마그네슘 캡슐 500 mg 100 베지 캡슐",
+    "brand_name": "Life Extension",
+    "original_price": 13454,
+    "sale_price": 13454,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/lex/lex14591/u/196.jpg",
+    "rank": 16,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "아연 50mg 250정",
+    "brand_name": "NOW Foods",
+    "original_price": 12898,
+    "sale_price": 12898,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now01522/u/48.jpg",
+    "rank": 17,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "고흡수 마그네슘 글리실산 350mg 베지 캡슐 120정",
+    "brand_name": "Solaray",
+    "original_price": 19264,
+    "sale_price": 19264,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/sor/sor54901/u/8.jpg",
+    "rank": 20,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "OptiMSM 함유 MSM 1500mg 120정",
+    "brand_name": "Doctor's Best",
+    "original_price": 12762,
+    "sale_price": 12762,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/drb/drb00097/u/202.jpg",
+    "rank": 23,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "철분 36mg 베지 캡슐 90정",
+    "brand_name": "NOW Foods",
+    "original_price": 12088,
+    "sale_price": 12088,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now01444/u/32.jpg",
+    "rank": 24,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "피콜린산 아연 50mg 베지 캡슐 120정",
+    "brand_name": "NOW Foods",
+    "original_price": 14510,
+    "sale_price": 14510,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now01552/u/57.jpg",
+    "rank": 25,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "l-아르기닌 1000mg 120정",
+    "brand_name": "NOW Foods",
+    "original_price": 24203,
+    "sale_price": 24203,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now00035/u/32.jpg",
+    "rank": 26,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "아연 50mg 100정",
+    "brand_name": "NOW Foods",
+    "original_price": 6437,
+    "sale_price": 6437,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now01520/u/30.jpg",
+    "rank": 27,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "Albion® 마그네슘 글리신산 133mg 비건 캡슐 90정",
+    "brand_name": "Swanson",
+    "original_price": 9382,
+    "sale_price": 9382,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/swv/swv02073/u/72.jpg",
+    "rank": 32,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "마그네슘 250mg 110정",
+    "brand_name": "21st Century",
+    "original_price": 3809,
+    "sale_price": 3809,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cen/cen22713/u/85.jpg",
+    "rank": 36,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "이노시톨 캡슐 500mg 베지 캡슐 100정",
+    "brand_name": "NOW Foods",
+    "original_price": 10475,
+    "sale_price": 10475,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now00475/u/40.jpg",
+    "rank": 38,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "고흡수 마그네슘 글리시네이트 350 베지 캡슐 160정",
+    "brand_name": "KAL",
+    "original_price": 20995,
+    "sale_price": 20995,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cal/cal39022/u/48.jpg",
+    "rank": 40,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "밀크시슬 추출물 300mg 베지 캡슐 200정",
+    "brand_name": "NOW Foods",
+    "original_price": 30428,
+    "sale_price": 30428,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now04753/u/116.jpg",
+    "rank": 42,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "아슈와간다 표준화 추출물 450mg 베지 캡슐 90정",
+    "brand_name": "NOW Foods",
+    "original_price": 13703,
+    "sale_price": 13703,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now04603/u/83.jpg",
+    "rank": 43,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "글루콘산칼륨 595 mg 110 타블릿",
+    "brand_name": "21st Century",
+    "original_price": 5077,
+    "sale_price": 5077,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cen/cen21387/u/57.jpg",
+    "rank": 44,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "마그네슘 글리신산 고흡수 베지 캡슐 240정",
+    "brand_name": "Solaray",
+    "original_price": 33430,
+    "sale_price": 33430,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/sor/sor89504/u/40.jpg",
+    "rank": 45,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "시트르산 아연 50mg 60정",
+    "brand_name": "21st Century",
+    "original_price": 3461,
+    "sale_price": 3461,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cen/cen28026/u/8.jpg",
+    "rank": 47,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "NMN 175mg 베지 캡슐 60정",
+    "brand_name": "California Gold Nutrition",
+    "original_price": 21356,
+    "sale_price": 21356,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cgn/cgn01920/u/111.jpg",
+    "rank": 48,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "WellBetX® 베르베린 500mg 베지 캡슐 60정",
+    "brand_name": "Natural Factors",
+    "original_price": 21752,
+    "sale_price": 21752,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/nfs/nfs03544/u/83.jpg",
+    "rank": 50,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "루테인 Lutemax 2020 20mg 소프트젤 180정",
+    "brand_name": "Doctor's Best",
+    "original_price": 39490,
+    "sale_price": 39490,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/drb/drb00370/u/83.jpg",
+    "rank": 52,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "마그네슘 캡슐 400mg 베지 캡슐 180정",
+    "brand_name": "NOW Foods",
+    "original_price": 17745,
+    "sale_price": 17745,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now01283/u/51.jpg",
+    "rank": 53,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "마그네슘 함유 액상 칼슘 천연 오렌지 맛 474 ml(16fl oz)",
+    "brand_name": "ChildLife Essentials",
+    "original_price": 32319,
+    "sale_price": 32319,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cdl/cdl10700/u/79.jpg",
+    "rank": 56,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "NMN 175mg 베지 캡슐 180정",
+    "brand_name": "California Gold Nutrition",
+    "original_price": 56727,
+    "sale_price": 56727,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cgn/cgn02335/u/30.jpg",
+    "rank": 58,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "마그네슘시트레이트 베지 캡슐 120정(캡슐 1정당 133mg)",
+    "brand_name": "NOW Foods",
+    "original_price": 16128,
+    "sale_price": 16128,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now01294/u/77.jpg",
+    "rank": 61,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "징크피콜리네이트 15mg 캡슐 60정",
+    "brand_name": "Thorne",
+    "original_price": 19932,
+    "sale_price": 19932,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/thr/thr21002/u/37.jpg",
+    "rank": 63,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "Kinoko® 플래티넘 AHCC® 750mg 베지 캡슐 60정",
+    "brand_name": "Quality of Life",
+    "original_price": 100049,
+    "sale_price": 100049,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/qll/qll00337/u/70.jpg",
+    "rank": 66,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "알파리포산 600 600mg 베지 캡슐 60정",
+    "brand_name": "Doctor's Best",
+    "original_price": 19353,
+    "sale_price": 19353,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/drb/drb00133/u/123.jpg",
+    "rank": 69,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "글리신 1000 mg 베지 캡슐 100정",
+    "brand_name": "NOW Foods",
+    "original_price": 13705,
+    "sale_price": 13705,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now00107/u/27.jpg",
+    "rank": 70,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "타우린 1000mg 베지 캡슐 100정",
+    "brand_name": "NOW Foods",
+    "original_price": 11283,
+    "sale_price": 11283,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now00142/u/54.jpg",
+    "rank": 71,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "칼슘 마그네슘 아연 + D3 250정",
+    "brand_name": "21st Century",
+    "original_price": 13966,
+    "sale_price": 13966,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cen/cen28048/u/13.jpg",
+    "rank": 81,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "피콜린산 아연 22mg 캡슐 60정",
+    "brand_name": "Swanson",
+    "original_price": 5396,
+    "sale_price": 5396,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/swv/swv11113/u/56.jpg",
+    "rank": 82,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "옵티마이즈드 아슈와간다 베지 캡슐 60정(캡슐 1정당 125mg)",
+    "brand_name": "Life Extension",
+    "original_price": 11212,
+    "sale_price": 11212,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/lex/lex88806/u/102.jpg",
+    "rank": 86,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "NAD+ Cell Regenerator 100mg 베지 캡슐 30정",
+    "brand_name": "Life Extension",
+    "original_price": 26909,
+    "sale_price": 26909,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/lex/lex19043/u/67.jpg",
+    "rank": 96,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "고흡수 CoQ10 100mg 소프트젤 120정",
+    "brand_name": "Doctor's Best",
+    "original_price": 24958,
+    "sale_price": 24958,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/drb/drb00183/u/131.jpg",
+    "rank": 98,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "표준화된 아슈와간다 추출물 450mg 베지 캡슐 180정",
+    "brand_name": "NOW Foods",
+    "original_price": 20740,
+    "sale_price": 20740,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now04593/u/27.jpg",
+    "rank": 100,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "BlueRich 고강도 블루베리 농축물 500mg 소프트젤 90정",
+    "brand_name": "Natural Factors",
+    "original_price": 16497,
+    "sale_price": 16497,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/nfs/nfs04516/u/54.jpg",
+    "rank": 103,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "마그네슘글리신산 캡슐 90정(캡슐 1정당 135mg)",
+    "brand_name": "Thorne",
+    "original_price": 29899,
+    "sale_price": 29899,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/thr/thr27202/u/41.jpg",
+    "rank": 106,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "l-테아닌 AlphaWave® 함유 200mg 베지 캡슐 60정",
+    "brand_name": "California Gold Nutrition",
+    "original_price": 14318,
+    "sale_price": 14318,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cgn/cgn01242/u/171.jpg",
+    "rank": 108,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "모링가 잎 베지 캡슐 60정(캡슐 1정당 600mg)",
+    "brand_name": "MRM Nutrition",
+    "original_price": 9066,
+    "sale_price": 9066,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/mrm/mrm80020/u/65.jpg",
+    "rank": 112,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "나이아신아마이드 500mg 베지 캡슐 100정",
+    "brand_name": "NOW Foods",
+    "original_price": 9667,
+    "sale_price": 9667,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now00478/u/55.jpg",
+    "rank": 114,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "비건 GSE 자몽 씨 추출물 액상 농축물 100mg 59ml(2fl oz)",
+    "brand_name": "NutriBiotic",
+    "original_price": 14971,
+    "sale_price": 14971,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/nbc/nbc01000/u/36.jpg",
+    "rank": 117,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "아스타잔틴 AstaLif 순수 아이슬란드산 12mg 베지 소프트젤 30정",
+    "brand_name": "California Gold Nutrition",
+    "original_price": 17769,
+    "sale_price": 17769,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cgn/cgn01103/u/203.jpg",
+    "rank": 121,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "아연 피콜리네이트 22mg 100정",
+    "brand_name": "Solgar",
+    "original_price": 12074,
+    "sale_price": 12074,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/sol/sol03725/u/75.jpg",
+    "rank": 122,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "마그네슘 비스글리시네이트 TRAACS®로 제조 베지 캡슐 60정(캡슐당 100mg)",
+    "brand_name": "California Gold Nutrition",
+    "original_price": 9318,
+    "sale_price": 9318,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cgn/cgn01901/u/59.jpg",
+    "rank": 123,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "마그네슘 말레이트 1000mg 180정",
+    "brand_name": "NOW Foods",
+    "original_price": 20976,
+    "sale_price": 20976,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now01300/u/82.jpg",
+    "rank": 125,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "MagKidz Animal Parade 어린이용 츄어블 마그네슘 체리 맛 동물 모양 정제 90정(1정당 50mg)",
+    "brand_name": "NaturesPlus",
+    "original_price": 14259,
+    "sale_price": 14259,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/nap/nap29942/u/39.jpg",
+    "rank": 129,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "L-티로신 500mg 캡슐 120정",
+    "brand_name": "NOW Foods",
+    "original_price": 12896,
+    "sale_price": 12896,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now00162/u/52.jpg",
+    "rank": 130,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "구연산칼륨 99mg 베지 캡슐 180정",
+    "brand_name": "NOW Foods",
+    "original_price": 12090,
+    "sale_price": 12090,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now01448/u/34.jpg",
+    "rank": 133,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "아스타잔틴 4mg 베지 소프트젤 60정",
+    "brand_name": "NOW Foods",
+    "original_price": 16124,
+    "sale_price": 16124,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now03251/u/53.jpg",
+    "rank": 136,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "CoQ10 Bioperine® 흑후추추출물 함유 유비퀴논 USP 생체이용률 향상 100mg 베지 캡슐 150정",
+    "brand_name": "California Gold Nutrition",
+    "original_price": 27408,
+    "sale_price": 27408,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cgn/cgn01428/u/162.jpg",
+    "rank": 137,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "마그네슘 말레이트 400 90정",
+    "brand_name": "KAL",
+    "original_price": 15852,
+    "sale_price": 15852,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cal/cal81309/u/121.jpg",
+    "rank": 139,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "고흡수 CoQ10 BioPerine® 함유 100mg 베지 캡슐 120정",
+    "brand_name": "Doctor's Best",
+    "original_price": 24959,
+    "sale_price": 24959,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/drb/drb00188/u/156.jpg",
+    "rank": 141,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "Magtein® 마그네슘 L-트레온산 베지 캡슐 90정",
+    "brand_name": "NOW Foods",
+    "original_price": 48416,
+    "sale_price": 48416,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now02390/u/27.jpg",
+    "rank": 146,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "마그네슘 시트레이트 100mg 베지 캡슐 100정",
+    "brand_name": "Life Extension",
+    "original_price": 14202,
+    "sale_price": 14202,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/lex/lex16821/u/111.jpg",
+    "rank": 153,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "아연 캡슐 고효능 50mg 베지 캡슐 90정",
+    "brand_name": "Life Extension",
+    "original_price": 10090,
+    "sale_price": 10090,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/lex/lex18139/u/125.jpg",
+    "rank": 155,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "l-테아닌 200mg 캡슐 120정",
+    "brand_name": "Nutricost",
+    "original_price": 17013,
+    "sale_price": 17013,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/ncs/ncs67937/u/8.jpg",
+    "rank": 162,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "L. 글루타민 500mg 베지 캡슐 120정",
+    "brand_name": "NOW Foods",
+    "original_price": 12897,
+    "sale_price": 12897,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now00092/u/42.jpg",
+    "rank": 164,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "L-카르니틴 1000mg 100정",
+    "brand_name": "NOW Foods",
+    "original_price": 38733,
+    "sale_price": 38733,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now00068/u/8.jpg",
+    "rank": 165,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "은행나무 120mg 베지 캡슐 120정",
+    "brand_name": "Doctor's Best",
+    "original_price": 13933,
+    "sale_price": 13933,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/drb/drb00091/u/163.jpg",
+    "rank": 166,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "킬레이트화 아연 50mg 60정",
+    "brand_name": "21st Century",
+    "original_price": 3461,
+    "sale_price": 3461,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cen/cen28024/u/104.jpg",
+    "rank": 167,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "마그네슘 비스글리시네이트 TRAACS®로 제조 베지 캡슐 240정(캡슐당 100mg)",
+    "brand_name": "California Gold Nutrition",
+    "original_price": 40465,
+    "sale_price": 40465,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cgn/cgn01902/u/106.jpg",
+    "rank": 168,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "동충하초 CS-4 균주 베지 캡슐 60정(캡슐 1정당 750mg)",
+    "brand_name": "MRM Nutrition",
+    "original_price": 15340,
+    "sale_price": 15340,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/mrm/mrm71030/u/83.jpg",
+    "rank": 173,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "통캇알리 400mg 베지 캡슐 60정",
+    "brand_name": "Solaray",
+    "original_price": 12433,
+    "sale_price": 12433,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/sor/sor54433/u/56.jpg",
+    "rank": 175,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "철분 비스글리시네이트 60캡슐(캡슐 1정당 25mg)",
+    "brand_name": "Thorne",
+    "original_price": 21356,
+    "sale_price": 21356,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/thr/thr00345/u/38.jpg",
+    "rank": 176,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "필수 추출물 베르베린 500mg 베지 캡슐 60정",
+    "brand_name": "Solaray",
+    "original_price": 21798,
+    "sale_price": 21798,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/sor/sor47705/u/32.jpg",
+    "rank": 182,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "피콜린산 아연 50mg 베지 캡슐 60정(캡슐 1정당 50mg)",
+    "brand_name": "NOW Foods",
+    "original_price": 8051,
+    "sale_price": 8051,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now01550/u/8.jpg",
+    "rank": 185,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "글루타치온 500mg 베지 캡슐 60정",
+    "brand_name": "NOW Foods",
+    "original_price": 35499,
+    "sale_price": 35499,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now00104/u/78.jpg",
+    "rank": 187,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "철분 18mg 베지 캡슐 120정",
+    "brand_name": "NOW Foods",
+    "original_price": 10474,
+    "sale_price": 10474,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now01443/u/30.jpg",
+    "rank": 191,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "L-글루타치온(환원형) 500mg 베지 캡슐 120정",
+    "brand_name": "California Gold Nutrition",
+    "original_price": 60280,
+    "sale_price": 60280,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cgn/cgn01898/u/68.jpg",
+    "rank": 192,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "철분 65mg 120정",
+    "brand_name": "21st Century",
+    "original_price": 6369,
+    "sale_price": 6369,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cen/cen22670/u/41.jpg",
+    "rank": 195,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "아스타잔틴 Astalif® 순수 아이슬란드 12mg 베지 소프트젤 120정",
+    "brand_name": "California Gold Nutrition",
+    "original_price": 63183,
+    "sale_price": 63183,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cgn/cgn01104/u/176.jpg",
+    "rank": 196,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "Full Spectrum® 밀크시슬 500mg 비건 캡슐 100정",
+    "brand_name": "Swanson",
+    "original_price": 7389,
+    "sale_price": 7389,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/swv/swv01966/u/72.jpg",
+    "rank": 199,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "마카 500mg 베지 캡슐 250정",
+    "brand_name": "NOW Foods",
+    "original_price": 18665,
+    "sale_price": 18665,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now04762/u/33.jpg",
+    "rank": 200,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "마그네슘시트레이트 베지 캡슐 240정(캡슐 1정당 133mg)",
+    "brand_name": "NOW Foods",
+    "original_price": 30663,
+    "sale_price": 30663,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now01296/u/60.jpg",
+    "rank": 201,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "고흡수 마그네슘 베지 캡슐 120정(캡슐 1정당 52.5mg)",
+    "brand_name": "Doctor's Best",
+    "original_price": 16264,
+    "sale_price": 16264,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/drb/drb00565/u/32.jpg",
+    "rank": 202,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "Chlorofresh 액상 엽록소 무맛 132mg 480ml(16fl oz)",
+    "brand_name": "Nature's Way",
+    "original_price": 15679,
+    "sale_price": 15679,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/nwy/nwy03502/u/55.jpg",
+    "rank": 203,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "L-시스테인 500mg 100정",
+    "brand_name": "NOW Foods",
+    "original_price": 17742,
+    "sale_price": 17742,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now00077/u/33.jpg",
+    "rank": 204,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "스포츠 크레아틴 750mg 베지 캡슐 240정",
+    "brand_name": "California Gold Nutrition",
+    "original_price": 27208,
+    "sale_price": 27208,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cgn/cgn02283/u/42.jpg",
+    "rank": 205,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "호박 씨오일 1000mg 소프트젤 100정",
+    "brand_name": "Swanson",
+    "original_price": 13511,
+    "sale_price": 13511,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/swv/swv01364/u/24.jpg",
+    "rank": 211,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "마그네슘 시트레이트 200mg 250정",
+    "brand_name": "NOW Foods",
+    "original_price": 32283,
+    "sale_price": 32283,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now01292/u/32.jpg",
+    "rank": 214,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "CranRich 크랜베리 농축물 초강력 500mg 캡슐 180정",
+    "brand_name": "Natural Factors",
+    "original_price": 23993,
+    "sale_price": 23993,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/nfs/nfs04513/u/38.jpg",
+    "rank": 215,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "B-1 100mg 100정",
+    "brand_name": "NOW Foods",
+    "original_price": 7245,
+    "sale_price": 7245,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now00446/u/54.jpg",
+    "rank": 219,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "CoQ10 100mg 베지 소프트젤 30정",
+    "brand_name": "California Gold Nutrition",
+    "original_price": 8885,
+    "sale_price": 8885,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cgn/cgn00943/u/170.jpg",
+    "rank": 220,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "쏘팔메토 추출물 남성 건강 320mg 베지 소프트젤 90정",
+    "brand_name": "NOW Foods",
+    "original_price": 32270,
+    "sale_price": 32270,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now04756/u/32.jpg",
+    "rank": 227,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "트리플 마그네슘 복합체 말레이트 시트레이트 비스글리시네이트 킬레이트 베지 캡슐 120정(캡슐당 105mg)",
+    "brand_name": "California Gold Nutrition",
+    "original_price": 22078,
+    "sale_price": 22078,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cgn/cgn02484/u/9.jpg",
+    "rank": 228,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "L-글루타치온(환원형) 500mg 베지 캡슐 30정",
+    "brand_name": "California Gold Nutrition",
+    "original_price": 17154,
+    "sale_price": 17154,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cgn/cgn01897/u/53.jpg",
+    "rank": 231,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "Ferrochel 철분(비스글리시네이트) 36mg 베지 캡슐 90정",
+    "brand_name": "California Gold Nutrition",
+    "original_price": 10970,
+    "sale_price": 10970,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cgn/cgn01347/u/143.jpg",
+    "rank": 232,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "사과 펙틴 700mg 베지 캡슐 120정",
+    "brand_name": "NOW Foods",
+    "original_price": 16127,
+    "sale_price": 16127,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now06425/u/25.jpg",
+    "rank": 234,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "Neuro-Mag® 마그네슘 L-트레온산 트로피컬 펀치 맛 93.35g(3.293oz)",
+    "brand_name": "Life Extension",
+    "original_price": 46134,
+    "sale_price": 46134,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/lex/lex20329/u/91.jpg",
+    "rank": 235,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "밀크시슬 추출물 최대 강도 750mg 베지 캡슐 90정",
+    "brand_name": "NOW Foods",
+    "original_price": 28235,
+    "sale_price": 28235,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now04795/u/24.jpg",
+    "rank": 237,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "여성용 붕산 질정 600mg 캡슐 30정",
+    "brand_name": "Nutricost",
+    "original_price": 13511,
+    "sale_price": 13511,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/ncs/ncs67303/u/8.jpg",
+    "rank": 238,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "엽록소 100mg 베지 캡슐 90정",
+    "brand_name": "NOW Foods",
+    "original_price": 16124,
+    "sale_price": 16124,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now02645/u/39.jpg",
+    "rank": 242,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "비건 GSE 자몽씨추출물 농축액 100mg 118ml(4fl oz)",
+    "brand_name": "NutriBiotic",
+    "original_price": 23369,
+    "sale_price": 23369,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/nbc/nbc01001/u/30.jpg",
+    "rank": 249,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "킬레이트화 마그네슘 비스글리시네이트 180정(1정당 105mg)",
+    "brand_name": "KAL",
+    "original_price": 14981,
+    "sale_price": 14981,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cal/cal58646/u/24.jpg",
+    "rank": 250,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "D-마노스 500mg 베지 캡슐 120정",
+    "brand_name": "NOW Foods",
+    "original_price": 22123,
+    "sale_price": 22123,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now02811/u/75.jpg",
+    "rank": 254,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "프로폴리스 1500 300mg 베지 캡슐 100정",
+    "brand_name": "NOW Foods",
+    "original_price": 16125,
+    "sale_price": 16125,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now02540/u/15.jpg",
+    "rank": 256,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "어린이용 츄어블 철분 천연 딸기 맛 15mg 60정",
+    "brand_name": "Carlson",
+    "original_price": 9805,
+    "sale_price": 9805,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/car/car55940/u/34.jpg",
+    "rank": 259,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "l-라이신 1000mg 100정",
+    "brand_name": "NOW Foods",
+    "original_price": 12092,
+    "sale_price": 12092,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now00113/u/41.jpg",
+    "rank": 262,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "NMN Pro 1000 캡슐 60정(캡슐 1정당 500mg)",
+    "brand_name": "ProHealth Longevity",
+    "original_price": 142305,
+    "sale_price": 142305,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/phv/phv77904/u/40.jpg",
+    "rank": 263,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "마그네슘 타우레이트+ 90정",
+    "brand_name": "KAL",
+    "original_price": 18319,
+    "sale_price": 18319,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cal/cal36975/u/132.jpg",
+    "rank": 264,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "타우린 500mg 베지 캡슐 100정",
+    "brand_name": "NOW Foods",
+    "original_price": 8053,
+    "sale_price": 8053,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now00140/u/32.jpg",
+    "rank": 265,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "미오이노시톨 캡슐 120정(캡슐 1정당 500mg)",
+    "brand_name": "Fairhaven Health",
+    "original_price": 27151,
+    "sale_price": 27151,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/fhh/fhh00075/u/76.jpg",
+    "rank": 267,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "CoQ10 Bioperine® 흑후추추출물 함유 생체이용률 향상 200mg 베지 캡슐 120정",
+    "brand_name": "California Gold Nutrition",
+    "original_price": 34856,
+    "sale_price": 34856,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cgn/cgn02451/u/9.jpg",
+    "rank": 268,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "판토텐산 500mg 베지 캡슐 100정",
+    "brand_name": "NOW Foods",
+    "original_price": 10474,
+    "sale_price": 10474,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now00486/u/8.jpg",
+    "rank": 273,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "C 500mg 110정",
+    "brand_name": "21st Century",
+    "original_price": 5700,
+    "sale_price": 5700,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cen/cen22316/u/15.jpg",
+    "rank": 274,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "꿀벌 프로폴리스 2X 추출물 농축액 500mg 베지 캡슐 90정",
+    "brand_name": "California Gold Nutrition",
+    "original_price": 14320,
+    "sale_price": 14320,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cgn/cgn00945/u/141.jpg",
+    "rank": 279,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "모노라우린 500mg VegCap 60정",
+    "brand_name": "Solaray",
+    "original_price": 14533,
+    "sale_price": 14533,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/sor/sor62754/u/79.jpg",
+    "rank": 281,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "징크피콜리네이트 30mg 캡슐 60정",
+    "brand_name": "Thorne",
+    "original_price": 27051,
+    "sale_price": 27051,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/thr/thr00692/u/24.jpg",
+    "rank": 282,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "EGCg 녹차추출물 400mg 베지 캡슐 180정",
+    "brand_name": "NOW Foods",
+    "original_price": 24200,
+    "sale_price": 24200,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now04757/u/22.jpg",
+    "rank": 284,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "프로폴리스 추출물 알코올 무함유 1000mg 30ml(1fl oz)",
+    "brand_name": "Nature's Answer",
+    "original_price": 14089,
+    "sale_price": 14089,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/nta/nta00657/u/64.jpg",
+    "rank": 285,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "밀크시슬 1000mg 캡슐 240정",
+    "brand_name": "Nutricost",
+    "original_price": 19861,
+    "sale_price": 19861,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/ncs/ncs67537/u/24.jpg",
+    "rank": 287,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "인돌-3-카르비놀 200mg 베지 캡슐 60정",
+    "brand_name": "NOW Foods",
+    "original_price": 24197,
+    "sale_price": 24197,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now03056/u/27.jpg",
+    "rank": 290,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "차전자피 캡슐 700mg 베지 캡슐 180정",
+    "brand_name": "NOW Foods",
+    "original_price": 16129,
+    "sale_price": 16129,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now05973/u/48.jpg",
+    "rank": 293,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "무가공 마카 750mg 베지 캡슐 90정",
+    "brand_name": "NOW Foods",
+    "original_price": 20162,
+    "sale_price": 20162,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now04777/u/31.jpg",
+    "rank": 295,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "애플 사이다 식초 500mg 캡슐 360정",
+    "brand_name": "Natural Factors",
+    "original_price": 23258,
+    "sale_price": 23258,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/nfs/nfs02054/u/84.jpg",
+    "rank": 304,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "NAD+ 셀 리제너레이터 300mg 베지 캡슐 30정",
+    "brand_name": "Life Extension",
+    "original_price": 60545,
+    "sale_price": 60545,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/lex/lex23443/u/24.jpg",
+    "rank": 305,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "마그네슘 비스글리시네이트 분말 227g(8oz)",
+    "brand_name": "NOW Foods",
+    "original_price": 19360,
+    "sale_price": 19360,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now01299/u/49.jpg",
+    "rank": 308,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "타우린 1000mg 베지 캡슐 90정",
+    "brand_name": "Life Extension",
+    "original_price": 14575,
+    "sale_price": 14575,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/lex/lex18279/u/83.jpg",
+    "rank": 309,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "아연 피콜리네이트 50mg 베지 캡슐 120정",
+    "brand_name": "California Gold Nutrition",
+    "original_price": 16745,
+    "sale_price": 16745,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cgn/cgn01353/u/147.jpg",
+    "rank": 310,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "마그네슘 타우레이트+ 180정",
+    "brand_name": "KAL",
+    "original_price": 31840,
+    "sale_price": 31840,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cal/cal61832/u/64.jpg",
+    "rank": 312,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "프리미엄 크릴 오일 SUPERBABoost 함유 1000mg 피쉬 젤라틴 소프트젤 60정",
+    "brand_name": "California Gold Nutrition",
+    "original_price": 46441,
+    "sale_price": 46441,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cgn/cgn01807/u/43.jpg",
+    "rank": 318,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "판토텐산 500mg 베지 캡슐 250정",
+    "brand_name": "NOW Foods",
+    "original_price": 22588,
+    "sale_price": 22588,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now00488/u/18.jpg",
+    "rank": 320,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "아연 킬레이트 25mg 90정",
+    "brand_name": "Natural Factors",
+    "original_price": 6759,
+    "sale_price": 6759,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/nfs/nfs01683/u/36.jpg",
+    "rank": 322,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "애플 사이다 식초 300mg 정제 250정",
+    "brand_name": "21st Century",
+    "original_price": 8840,
+    "sale_price": 8840,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cen/cen22848/u/47.jpg",
+    "rank": 326,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "B-2 100mg 베지 캡슐 100정",
+    "brand_name": "NOW Foods",
+    "original_price": 7244,
+    "sale_price": 7244,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now00447/u/8.jpg",
+    "rank": 330,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "마그네슘시트레이트 캡슐 90정(캡슐 1정당 133mg)",
+    "brand_name": "Solaray",
+    "original_price": 10914,
+    "sale_price": 10914,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/sor/sor46301/u/53.jpg",
+    "rank": 333,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "글라이신 1000mg 베지 캡슐 100정",
+    "brand_name": "Life Extension",
+    "original_price": 18456,
+    "sale_price": 18456,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/lex/lex16691/u/117.jpg",
+    "rank": 335,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "gmarket",
+    "item_url": "https://item.gmarket.co.kr/Item?goodscode=540181610",
+    "display_name": "밀크씨슬 (6개월분) 실리마린 130 mg 함유 / 간 건강 / 복합 6종 / 건강기능식품",
+    "original_price": 24400,
+    "sale_price": 16670,
+    "image_url": "//gdimg.gmarket.co.kr/540181610/still/300?ver=1732499802",
+    "rank": 70,
+    "brand_name": "튼튼닷컴",
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "gmarket",
+    "item_url": "https://item.gmarket.co.kr/Item?goodscode=4511253454",
+    "display_name": "카필라노 마누카 꿀 선물세트 MGO100+ (250g x 2개입)",
+    "original_price": 49000,
+    "sale_price": 42100,
+    "image_url": "//gdimg.gmarket.co.kr/4511253454/still/300?ver=1755753652",
+    "rank": 87,
+    "brand_name": "후박몰",
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "gmarket",
+    "item_url": "https://item.gmarket.co.kr/Item?goodscode=3336290007",
+    "display_name": "종근당건강 관절연골 뮤코다당단백 콘드로이친 1200mg 3박스 (3개월)",
+    "original_price": 72000,
+    "sale_price": 50400,
+    "image_url": "//gdimg.gmarket.co.kr/3336290007/still/300?ver=1722564834",
+    "rank": 113,
+    "brand_name": "종근당건강",
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "gmarket",
+    "item_url": "https://item.gmarket.co.kr/Item?goodscode=3455911562",
+    "display_name": "루테인 지아잔틴 아스타잔틴 160mg x 30캡슐 3박스 (총 3개월분) / 눈건강",
+    "original_price": 44230,
+    "sale_price": 35900,
+    "image_url": "//gdimg.gmarket.co.kr/3455911562/still/300?ver=1758499432",
+    "rank": 125,
+    "brand_name": "GNM자연의품격",
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "gmarket",
+    "item_url": "https://item.gmarket.co.kr/Item?goodscode=4516533456",
+    "display_name": "세노비스 마그네슘 (90정/90일분) x 2개",
+    "original_price": 37400,
+    "sale_price": 31790,
+    "image_url": "//gdimg.gmarket.co.kr/4516533456/still/300?ver=1758622411",
+    "rank": 145,
+    "brand_name": "세노비스",
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "gmarket",
+    "item_url": "https://item.gmarket.co.kr/Item?goodscode=540166960",
+    "display_name": "루테인 프리미엄 (6개월분) 500 mg x 180 캡슐 / 눈 건강 / 건강기능식품",
+    "original_price": 22000,
+    "sale_price": 16830,
+    "image_url": "//gdimg.gmarket.co.kr/540166960/still/300?ver=1731654867",
+    "rank": 152,
+    "brand_name": "튼튼닷컴",
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "Kakao Gift",
+    "display_name": "[정관장] 활기력부스터 박스 (400mg x 20정 + 20ml x 20병,이중복합제형)",
+    "brand_name": "정관장",
+    "rank": 8,
+    "product_link": "https://gift.kakao.com/product/6371333",
+    "image_url": "https://img1.kakaocdn.net/thumb/C320x320@2x.fwebp.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fproduct%2F20250929110058_240cda8b13d949eea21547035ed5b4fa.jpg",
+    "sale_price": 53000,
+    "original_price": 58500,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "마그네슘 400mg 울트라 다이렉트 (20일분)",
+    "brand_name": "바이오렉트라",
+    "original_price": 22000.0,
+    "sale_price": 18700,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/dbdc3c7e-d3bd-462b-aad5-4f76bcad3047.jpg",
+    "rank": 7,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "마그네슘400 (30일분)",
+    "brand_name": "도펠헤르츠",
+    "original_price": 20000.0,
+    "sale_price": 12900,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/11920ea3-ee33-46cf-a6a7-7ef7cc8e7ebd.jpg",
+    "rank": 48,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "마그네슘 솔루션 (30일분)",
+    "brand_name": "덴프스",
+    "original_price": 30000.0,
+    "sale_price": 16000,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/9a8ad78a-6a85-411e-a3ed-a21e99bf45b9.jpg",
+    "rank": 130,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "액상 칼슘 마그네슘 (30일분)",
+    "brand_name": "차일드라이프",
+    "original_price": 33500.0,
+    "sale_price": 26800,
+    "image_url": "https://img-cf.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/shop/data/goods/1652286135473l0.jpg",
+    "rank": 156,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "신경엔 마그네슘 (90일분)",
+    "brand_name": "한미양행",
+    "original_price": 17900.0,
+    "sale_price": 12530,
+    "image_url": "https://img-cf.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/shop/data/goods/1629194620409l0.jpg",
+    "rank": 164,
+    "category": "마그네슘"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "마누카꿀 MGO 100+",
+    "brand_name": "카필라노",
+    "original_price": 37700.0,
+    "sale_price": 24800,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/1eb7bbed-9da6-421d-8f55-d9ac001824ab.jpg",
+    "rank": 254,
+    "category": "마그네슘"
+  }
+]

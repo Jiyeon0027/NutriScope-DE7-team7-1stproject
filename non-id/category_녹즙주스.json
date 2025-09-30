@@ -1,0 +1,229 @@
+[
+  {
+    "shop_name": "gmarket",
+    "item_url": "https://item.gmarket.co.kr/Item?goodscode=3301351434",
+    "display_name": "(10% 적립) 풀무원녹즙 매일배송 채소습관 케일사과 130ml 4주분 (월-금) 총20병",
+    "original_price": 33990,
+    "sale_price": 26900,
+    "image_url": "//gdimg.gmarket.co.kr/3301351434/still/300?ver=1758856838",
+    "rank": 4,
+    "brand_name": "풀무원",
+    "category": "녹즙/주스"
+  },
+  {
+    "shop_name": "gmarket",
+    "item_url": "https://item.gmarket.co.kr/Item?goodscode=3979619951",
+    "display_name": "유기농 레몬즙 레몬수 원액 스틱 (5%적립)100포(1박스) 대용량 1일1레몬 착즙 (~9/30)",
+    "original_price": 30350,
+    "sale_price": 23800,
+    "image_url": "//gdimg.gmarket.co.kr/3979619951/still/300?ver=1758611047",
+    "rank": 26,
+    "brand_name": "순수식품",
+    "category": "녹즙/주스"
+  },
+  {
+    "shop_name": "gmarket",
+    "item_url": "https://item.gmarket.co.kr/Item?goodscode=1164638945",
+    "display_name": "햇살듬뿍 사과즙 100mlX100포 대용량 100포 벌크형",
+    "original_price": 21900,
+    "sale_price": 17710,
+    "image_url": "//gdimg.gmarket.co.kr/1164638945/still/300?ver=1758780478",
+    "rank": 49,
+    "brand_name": "햇살듬뿍",
+    "category": "녹즙/주스"
+  },
+  {
+    "shop_name": "gmarket",
+    "item_url": "https://item.gmarket.co.kr/Item?goodscode=2330457301",
+    "display_name": "10%적립 키즈 스텝1 블루베리향/사과향/딸기향 택1 3박스 (3개월분) + 키즈스텝1 블루베리향 20일 증정",
+    "original_price": 234000,
+    "sale_price": 161800,
+    "image_url": "//gdimg.gmarket.co.kr/2330457301/still/300?ver=1757890705",
+    "rank": 104,
+    "brand_name": "드시모네",
+    "category": "녹즙/주스"
+  },
+  {
+    "shop_name": "gmarket",
+    "item_url": "https://item.gmarket.co.kr/Item?goodscode=2185968695",
+    "display_name": "NFC착즙 100% 포도즙 과일주스 원액 (100mlx30포) 1박스 (3박스 구매시 4박스 발송)",
+    "original_price": 21900,
+    "sale_price": 16170,
+    "image_url": "//gdimg.gmarket.co.kr/2185968695/still/300?ver=1758500382",
+    "rank": 146,
+    "brand_name": "참앤들황토농원",
+    "category": "녹즙/주스"
+  },
+  {
+    "shop_name": "gmarket",
+    "item_url": "https://item.gmarket.co.kr/Item?goodscode=4175653298",
+    "display_name": "리얼톡톡 유기농 레몬즙 5박스(총70포) NFC 100% 착즙 레몬수 원액 레몬 주스 레몬물 액상 스틱 (4+1행사)",
+    "original_price": 19960,
+    "sale_price": 15980,
+    "image_url": "//gdimg.gmarket.co.kr/4175653298/still/300?ver=1757382333",
+    "rank": 153,
+    "brand_name": null,
+    "category": "녹즙/주스"
+  },
+  {
+    "shop_name": "gmarket",
+    "item_url": "https://item.gmarket.co.kr/Item?goodscode=2330459302",
+    "display_name": "10%적립 키즈 스텝1 사과향 3박스(3개월분) + 키즈 스텝1 20일분 증정",
+    "original_price": 234000,
+    "sale_price": 161800,
+    "image_url": "//gdimg.gmarket.co.kr/2330459302/still/300?ver=1757890766",
+    "rank": 159,
+    "brand_name": "드시모네",
+    "category": "녹즙/주스"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "하동 매실원액 2종 (500ml/1000ml)",
+    "brand_name": "소다미",
+    "original_price": 8200.0,
+    "sale_price": 7500,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/1ee2781d-621b-419a-abfd-43baec45e908.jpg",
+    "rank": 4,
+    "category": "녹즙/주스"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "그린 유기농 컬리케일 100 2종 (택1)",
+    "brand_name": "Make you Healthy",
+    "original_price": 30000.0,
+    "sale_price": 11900,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/0bd1e2b8-d546-4749-ac11-33f80670c67d.jpg",
+    "rank": 13,
+    "category": "녹즙/주스"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "청매실농원 청매실원 420mL",
+    "brand_name": "홍쌍리",
+    "original_price": null,
+    "sale_price": 15000,
+    "image_url": "https://img-cf.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/shop/data/goods/1516590715289l0.jpg",
+    "rank": 42,
+    "category": "녹즙/주스"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "유기농 황금 매실 엑기스 (광양매실) 380mL",
+    "brand_name": "우리농",
+    "original_price": null,
+    "sale_price": 12000,
+    "image_url": "https://img-cf.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/shop/data/goods/152895850366l0.jpg",
+    "rank": 51,
+    "category": "녹즙/주스"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "리얼 청 (3종) 오미자청/생강청/매실청 310mL",
+    "brand_name": "백설",
+    "original_price": 4980.0,
+    "sale_price": 4620,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/80b0c286-2773-479b-b775-0aa74babcc3e.jpg",
+    "rank": 68,
+    "category": "녹즙/주스"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "석류 착즙주스 1L",
+    "brand_name": "DIMES",
+    "original_price": null,
+    "sale_price": 5990,
+    "image_url": "https://img-cf.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/shop/data/goods/1626692835915l0.jpg",
+    "rank": 79,
+    "category": "녹즙/주스"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "프리미엄 오미자 자일로스청 원액 1L",
+    "brand_name": "문경몰",
+    "original_price": 19000.0,
+    "sale_price": 15960,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/7406899c-8eef-4ac3-8ca7-47c50a3470b8.jpg",
+    "rank": 100,
+    "category": "녹즙/주스"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "당근사과 착즙주스 1L",
+    "brand_name": "자임",
+    "original_price": 12900.0,
+    "sale_price": 11900,
+    "image_url": "https://img-cf.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/shop/data/goods/16557008908l0.jpg",
+    "rank": 104,
+    "category": "녹즙/주스"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "청춘농장 사과즙 30포",
+    "brand_name": "선물세트",
+    "original_price": 16900.0,
+    "sale_price": 15210,
+    "image_url": "https://img-cf.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/shop/data/goods/1597718337798l0.jpg",
+    "rank": 119,
+    "category": "녹즙/주스"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "NFC 100% ABC주스 1L",
+    "brand_name": "VIETPURE",
+    "original_price": 12900.0,
+    "sale_price": 6900,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/8985f24f-44a3-40e5-9556-620eae9c7b63.jpg",
+    "rank": 127,
+    "category": "녹즙/주스"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "바로이즙 ABC 착즙주스 2종",
+    "brand_name": "선물세트",
+    "original_price": 11000.0,
+    "sale_price": 8800,
+    "image_url": "https://img-cf.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/shop/data/goods/1590646864292l0.jpg",
+    "rank": 150,
+    "category": "녹즙/주스"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "베리 부스팅 주스 (100mL X 4개)",
+    "brand_name": "라티브",
+    "original_price": null,
+    "sale_price": 11600,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/d0475e50-3057-4cb7-837a-6a2a1d46a2a5.jpg",
+    "rank": 169,
+    "category": "녹즙/주스"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "바로이즙 이로울 사과즙 2종",
+    "brand_name": "선물세트",
+    "original_price": 8800.0,
+    "sale_price": 8600,
+    "image_url": "https://img-cf.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/shop/data/goods/1560494342342l0.jpg",
+    "rank": 187,
+    "category": "녹즙/주스"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "유기농 착즙주스(180mLX3개입)",
+    "brand_name": "테일러",
+    "original_price": null,
+    "sale_price": 10500,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/9860b5ab-1d2c-495a-a53c-c732b01766d1.jpg",
+    "rank": 228,
+    "category": "녹즙/주스"
+  },
+  {
+    "shop_name": "kurly",
+    "display_name": "콤부차 매실 3종 (30개입만 쇼핑백 증정)",
+    "brand_name": "티젠",
+    "original_price": 7000.0,
+    "sale_price": 5700,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/ddaef5fe-8315-42e9-8411-cbef532d683c.jpg",
+    "rank": 273,
+    "category": "녹즙/주스"
+  }
+]

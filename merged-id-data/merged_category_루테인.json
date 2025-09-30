@@ -1,0 +1,35 @@
+[
+  {
+    "id": 169,
+    "shop_name": "gmarket",
+    "display_name": "리얼메디온 루테인 지아잔틴 아스타잔틴 3박스 초임계 초소형 식물성캡슐 플러스 눈건강 헤마토코쿠스 특가",
+    "brand_name": "리얼메디온",
+    "original_price": 24970.0,
+    "sale_price": 17990,
+    "image_url": "//gdimg.gmarket.co.kr/4401031811/still/300?ver=1758789085",
+    "rank": 69,
+    "category": "루테인"
+  },
+  {
+    "id": 176,
+    "shop_name": "gmarket",
+    "display_name": "뉴트리코어 x Dr 맥스 알부민 3+1박스(루테인+쇼핑백증정~9/30+10%적립)",
+    "brand_name": null,
+    "original_price": 140000.0,
+    "sale_price": 117000,
+    "image_url": "//gdimg.gmarket.co.kr/4421862306/still/300?ver=1758846315",
+    "rank": 76,
+    "category": "루테인"
+  },
+  {
+    "id": 192,
+    "shop_name": "gmarket",
+    "display_name": "식물성 루테인 지아잔틴 미니 180캡슐 (6개월분) + 미니100(30C) 증정",
+    "brand_name": "안국건강",
+    "original_price": 42900.0,
+    "sale_price": 34470,
+    "image_url": "//gdimg.gmarket.co.kr/1769370328/still/300?ver=1758874867",
+    "rank": 92,
+    "category": "루테인"
+  }
+]

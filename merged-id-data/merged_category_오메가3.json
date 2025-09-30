@@ -1,0 +1,123 @@
+[
+  {
+    "id": 50,
+    "shop_name": "kurly",
+    "display_name": "알티지 오메가3 프리미엄 (30일분)",
+    "brand_name": "뉴트리원",
+    "original_price": 19900.0,
+    "sale_price": 10900,
+    "image_url": "https://img-cf.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/shop/data/goods/1642389190582l0.jpg",
+    "rank": 50,
+    "category": "오메가3"
+  },
+  {
+    "id": 66,
+    "shop_name": "kurly",
+    "display_name": "알티지 오메가-3 (90일분)",
+    "brand_name": "나우푸드",
+    "original_price": 50000.0,
+    "sale_price": 25000,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/bda636d0-a1f2-4d84-bbd2-a5d98795edd3.jpg",
+    "rank": 66,
+    "category": "오메가3"
+  },
+  {
+    "id": 81,
+    "shop_name": "kurly",
+    "display_name": "프로메가 알티지 오메가3 듀얼 (30일분)",
+    "brand_name": "종근당건강",
+    "original_price": 19900.0,
+    "sale_price": 12900,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3b04d174-6604-4702-a9f9-a46b9c2f4499.jpg",
+    "rank": 81,
+    "category": "오메가3"
+  },
+  {
+    "id": 84,
+    "shop_name": "kurly",
+    "display_name": "초임계 알티지(rTG) 오메가3 알파 (30일분)",
+    "brand_name": "닥터린",
+    "original_price": 24000.0,
+    "sale_price": 9900,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/6021170c-357c-4fd6-a4ab-07c693a14595.jpg",
+    "rank": 84,
+    "category": "오메가3"
+  },
+  {
+    "id": 118,
+    "shop_name": "gmarket",
+    "display_name": "식물성 퓨어 알티지 rTG오메가3 60캡슐 x 3개 (6개월분) +쇼핑백",
+    "brand_name": "고려은단",
+    "original_price": 62380.0,
+    "sale_price": 47900,
+    "image_url": "//gdimg.gmarket.co.kr/2246186364/still/300?ver=1747185193",
+    "rank": 18,
+    "category": "오메가3"
+  },
+  {
+    "id": 121,
+    "shop_name": "gmarket",
+    "display_name": "닥터린 초임계 알티지(rTG) 오메가3 (송중기 오메가) 12개월(9/27~29특가+쇼핑백증정~9/30+10%적립)",
+    "brand_name": "닥터린",
+    "original_price": 116870.0,
+    "sale_price": 87000,
+    "image_url": "//gdimg.gmarket.co.kr/2168139041/still/300?ver=1758865260",
+    "rank": 21,
+    "category": "오메가3"
+  },
+  {
+    "id": 156,
+    "shop_name": "gmarket",
+    "display_name": "고려은단 식물성 퓨어 알티지 오메가3 기억력+ 60캡슐 X 3개 (3개월분) +쇼핑백",
+    "brand_name": "고려은단",
+    "original_price": 56130.0,
+    "sale_price": 42900,
+    "image_url": "//gdimg.gmarket.co.kr/2309698092/still/300?ver=1746533777",
+    "rank": 56,
+    "category": "오메가3"
+  },
+  {
+    "id": 164,
+    "shop_name": "gmarket",
+    "display_name": "식물성 퓨어 알티지 rTG 오메가3 이지 60캡슐 X 3개 (3개월분)",
+    "brand_name": "고려은단",
+    "original_price": 39880.0,
+    "sale_price": 29900,
+    "image_url": "//gdimg.gmarket.co.kr/2692870912/still/300?ver=1742193794",
+    "rank": 64,
+    "category": "오메가3"
+  },
+  {
+    "id": 203,
+    "shop_name": "iHerb",
+    "display_name": "오메가3 프리미엄 피쉬 오일 피쉬 젤라틴 소프트젤 100정(소프트젤당 1100mg)",
+    "brand_name": "California Gold Nutrition",
+    "original_price": 17364.0,
+    "sale_price": 17364,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/mli/mli00952/u/218.jpg",
+    "rank": 3,
+    "category": "오메가3"
+  },
+  {
+    "id": 206,
+    "shop_name": "iHerb",
+    "display_name": "오메가 800 초고농축 오메가3 피쉬 오일 kd-pur 트리글리세리드 형태 피쉬 젤라틴 소프트젤 30정(소프트젤 1정당 1000mg)",
+    "brand_name": "California Gold Nutrition",
+    "original_price": 14763.0,
+    "sale_price": 14763,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cgn/cgn01251/u/156.jpg",
+    "rank": 6,
+    "category": "오메가3"
+  },
+  {
+    "id": 279,
+    "shop_name": "iHerb",
+    "display_name": "어린이용 DHA™ 구미젤리 츄 만 3세 이상 트로피컬 펀치 구미젤리 30개(구미젤리 1개당 355mg)",
+    "brand_name": "Nordic Naturals",
+    "original_price": 26567.0,
+    "sale_price": 26567,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/nor/nor01709/u/87.jpg",
+    "rank": 79,
+    "category": "오메가3"
+  }
+]

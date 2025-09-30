@@ -1,0 +1,33 @@
+[
+  {
+    "shop_name": "iHerb",
+    "display_name": "Camilia® 이앓이 통증 완화제 1개월 이상 30회분 각 1ml(0.034fl oz)",
+    "brand_name": "Boiron",
+    "original_price": 17140,
+    "sale_price": 17140,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/boi/boi05409/u/99.jpg",
+    "rank": 72,
+    "category": "칼슘"
+  },
+  {
+    "shop_name": "iHerb",
+    "display_name": "칼슘 플러스 D3 90정",
+    "brand_name": "21st Century",
+    "original_price": 7643,
+    "sale_price": 7643,
+    "image_url": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/cen/cen27070/u/49.jpg",
+    "rank": 288,
+    "category": "칼슘"
+  },
+  {
+    "shop_name": "gmarket",
+    "item_url": "https://item.gmarket.co.kr/Item?goodscode=2490602939",
+    "display_name": "콘드로이친 상어연골 1800 MBP 엠비피  (5%적립+쇼핑백1매) 4박스(240정) 보스웰리아 해조칼슘 (~9/30)",
+    "original_price": 33980,
+    "sale_price": 26890,
+    "image_url": "//gdimg.gmarket.co.kr/2490602939/still/300?ver=1758611793",
+    "rank": 124,
+    "brand_name": "순수식품",
+    "category": "칼슘"
+  }
+]

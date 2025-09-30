@@ -1,0 +1,101 @@
+[
+  {
+    "id": 27,
+    "shop_name": "kurly",
+    "display_name": "우리아이 맑은습관 도라지배 2종 (택1)",
+    "brand_name": "룰루맘",
+    "original_price": 5900.0,
+    "sale_price": 5100,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/d1970351-823c-4db1-96e2-a278d615e1bb.jpg",
+    "rank": 27,
+    "category": "기타 건강식품"
+  },
+  {
+    "id": 63,
+    "shop_name": "kurly",
+    "display_name": "진한 배도라지즙 20포",
+    "brand_name": "루솔",
+    "original_price": 25100.0,
+    "sale_price": 19800,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/d52aaeb9-af51-4996-ac02-4d605bb42b78.jpg",
+    "rank": 63,
+    "category": "기타 건강식품"
+  },
+  {
+    "id": 74,
+    "shop_name": "kurly",
+    "display_name": "유기농 어린이 배도라지즙 2종 (100mL X 10포)",
+    "brand_name": "몸애쏙쏙",
+    "original_price": 15900.0,
+    "sale_price": 13320,
+    "image_url": "https://img-cf.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/shop/data/goods/1570437357849l0.jpg",
+    "rank": 74,
+    "category": "기타 건강식품"
+  },
+  {
+    "id": 131,
+    "shop_name": "gmarket",
+    "display_name": "김소형원장 명품 침향환(32환 2박스) 침향 함량 30%  쇼핑백 2개 증정",
+    "brand_name": "헤밀레",
+    "original_price": 99700.0,
+    "sale_price": 54950,
+    "image_url": "//gdimg.gmarket.co.kr/3878379821/still/300?ver=1758864040",
+    "rank": 31,
+    "category": "기타 건강식품"
+  },
+  {
+    "id": 133,
+    "shop_name": "gmarket",
+    "display_name": "신풍제약 애드마일스 배도라지스틱 3box 90포 + 쇼핑백 /프로폴리스 함유 / 소비기한 임박특가 26.04.22",
+    "brand_name": "애드마일스",
+    "original_price": 39900.0,
+    "sale_price": 31920,
+    "image_url": "//gdimg.gmarket.co.kr/3433586288/still/300?ver=1756796938",
+    "rank": 33,
+    "category": "기타 건강식품"
+  },
+  {
+    "id": 152,
+    "shop_name": "gmarket",
+    "display_name": "조선황림 발효 침향환 (주함량 63% / 흡수 2.5배) G마켓 판매 1위 + 60환",
+    "brand_name": "조선비책",
+    "original_price": 109000.0,
+    "sale_price": 97000,
+    "image_url": "//gdimg.gmarket.co.kr/1839136126/still/300?ver=1759070819",
+    "rank": 52,
+    "category": "기타 건강식품"
+  },
+  {
+    "id": 333,
+    "shop_name": "Kakao Gift",
+    "display_name": "\"하루 한포 건강\" [단독] 배를 품은 도라지스틱 30포x12g 국산 도라지,배 함유! (+약과메모잇)",
+    "brand_name": "위블리즈",
+    "original_price": 19800.0,
+    "sale_price": 19800,
+    "image_url": "https://img1.kakaocdn.net/thumb/C320x320@2x.fwebp.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fproduct%2F20250919184556_a3e96e70a80d4fe9a51e3d0813d52860.jpg",
+    "rank": 33,
+    "category": "기타 건강식품"
+  },
+  {
+    "id": 344,
+    "shop_name": "Kakao Gift",
+    "display_name": "침향환 골드 침향 60환 1세트",
+    "brand_name": "종근당",
+    "original_price": 69500.0,
+    "sale_price": 59000,
+    "image_url": "https://img1.kakaocdn.net/thumb/C320x320@2x.fwebp.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fproduct%2F20250717161655_483846c07ca04a35be51e7dac042c753.jpg",
+    "rank": 44,
+    "category": "기타 건강식품"
+  },
+  {
+    "id": 376,
+    "shop_name": "Kakao Gift",
+    "display_name": "\"몸에 좋은\" 설혜담 프로폴리스 담은 배도라지스틱 30포/호주 프로폴리스 국산 배즙",
+    "brand_name": "설혜담",
+    "original_price": 18900.0,
+    "sale_price": 16900,
+    "image_url": "https://img1.kakaocdn.net/thumb/C320x320@2x.fwebp.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fproduct%2F20250915103526_512a036ff87e407290ddf4039e1cdcd5.jpg",
+    "rank": 76,
+    "category": "기타 건강식품"
+  }
+]

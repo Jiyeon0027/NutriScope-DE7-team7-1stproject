@@ -1,0 +1,68 @@
+[
+  {
+    "id": 2,
+    "shop_name": "kurly",
+    "display_name": "골드 카무트 브랜드밀효소 (30포)",
+    "brand_name": "그레인온",
+    "original_price": 35000.0,
+    "sale_price": 13900,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/dbcc2d7c-d957-4754-aca6-680006e29676.jpg",
+    "rank": 2,
+    "category": "효소"
+  },
+  {
+    "id": 23,
+    "shop_name": "kurly",
+    "display_name": "효소 30포 3종 (택1)",
+    "brand_name": "이영애의 건강미식",
+    "original_price": 88000.0,
+    "sale_price": 16900,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3f7b0470-bb47-4023-b504-a6d97681350b.jpg",
+    "rank": 23,
+    "category": "효소"
+  },
+  {
+    "id": 40,
+    "shop_name": "kurly",
+    "display_name": "골드 카무트 브랜드밀효소G (30포)",
+    "brand_name": "그레인온",
+    "original_price": 25000.0,
+    "sale_price": 9900,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/11d6b376-00ca-4813-b68f-f9ba49ef8ce7.jpg",
+    "rank": 40,
+    "category": "효소"
+  },
+  {
+    "id": 76,
+    "shop_name": "kurly",
+    "display_name": "카무트 브랜드밀 효소골드 30포",
+    "brand_name": "이영애의 건강미식",
+    "original_price": 119200.0,
+    "sale_price": 22300,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/54b040da-8885-4a2e-8439-5c5d4ac689fd.jpg",
+    "rank": 76,
+    "category": "효소"
+  },
+  {
+    "id": 87,
+    "shop_name": "kurly",
+    "display_name": "골드카무트효소 선물세트 90포",
+    "brand_name": "그레인온",
+    "original_price": 45900.0,
+    "sale_price": 40900,
+    "image_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/46d80cf0-3585-4a4f-85de-e2a6dc8d3a8a.jpg",
+    "rank": 87,
+    "category": "효소"
+  },
+  {
+    "id": 179,
+    "shop_name": "gmarket",
+    "display_name": "그레인온 골드 카무트효소 5개월분(3g x 150포) +9포 증정",
+    "brand_name": "그레인온",
+    "original_price": 88000.0,
+    "sale_price": 65920,
+    "image_url": "//gdimg.gmarket.co.kr/4170991178/still/300?ver=1757859487",
+    "rank": 79,
+    "category": "효소"
+  }
+]
