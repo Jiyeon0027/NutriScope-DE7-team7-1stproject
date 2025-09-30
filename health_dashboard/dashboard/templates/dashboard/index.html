@@ -1,0 +1,180 @@
+{% comment %} {% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>건강식품 대시보드</title>
+    <link rel="stylesheet" href="{% static 'dashboard/style.css' %}">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>건강식품 대시보드</h1>
+    </header>
+    <main>
+        <section class="card">
+            <h2>가격 분포</h2>
+            {{ price_hist|safe }}
+        </section>
+
+        <section class="card">
+            <h2>인기 브랜드 Top 10</h2>
+            {{ brand_bar|safe }}
+        </section>
+
+        <section class="card">
+            <h2>카테고리별 비율</h2>
+            {{ category_pie|safe }}
+        </section>
+    </main>
+</body>
+</html> {% endcomment %}
+
+
+{% comment %} {% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>건강식품 대시보드(daily basic version)</title>
+    <link rel="stylesheet" href="{% static 'dashboard/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>🍃 건강식품 데이터 대시보드</h1>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+            <h2>💸 가격 분포</h2>
+            <div class="grid">
+                <div class="plot">{{ price_hist|safe }}</div>
+                <div class="plot">{{ price_box|safe }}</div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>⭐ 인기 브랜드 분석</h2>
+            <div class="grid">
+                <div class="plot">{{ brand_bar|safe }}</div>
+                <div class="plot">{{ brand_pie|safe }}</div>
+                <div class="plot">{{ brand_tree|safe }}</div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>📊 카테고리별 상품 수</h2>
+            <div class="grid">
+                <div class="plot">{{ category_bar|safe }}</div>
+                <div class="plot">{{ category_pie|safe }}</div>
+                <div class="plot">{{ category_tree|safe }}</div>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html> {% endcomment %}
+
+
+{% comment %} {% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>건강식품 대시보드(inflearn version)</title>
+    <link rel="stylesheet" href="{% static 'dashboard/style.css' %}">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">🍃 NutriScope</div>
+        <nav>
+            <a href="#">홈</a>
+            <a href="#">브랜드</a>
+            <a href="#">카테고리</a>
+            <a href="#">분석</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <!-- 가격 분석 -->
+        <h2 class="section-title">💸 가격 데이터 분석</h2>
+        <div class="card-grid">
+            <div class="card">{{ price_hist|safe }}</div>
+            <div class="card">{{ price_box|safe }}</div>
+        </div>
+
+        <!-- 인기 브랜드 -->
+        <h2 class="section-title">⭐ 인기 브랜드</h2>
+        <div class="card-grid">
+            <div class="card">{{ brand_bar|safe }}</div>
+            <div class="card">{{ brand_pie|safe }}</div>
+            <div class="card">{{ brand_tree|safe }}</div>
+        </div>
+
+        <!-- 카테고리 -->
+        <h2 class="section-title">📊 카테고리별 상품</h2>
+        <div class="card-grid">
+            <div class="card">{{ category_bar|safe }}</div>
+            <div class="card">{{ category_pie|safe }}</div>
+            <div class="card">{{ category_tree|safe }}</div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2025 NutriScope Dashboard</p>
+    </footer>
+</body>
+</html> {% endcomment %}
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>건강식품 대시보드(goorm version)</title>
+    <link rel="stylesheet" href="{% static 'dashboard/style.css' %}">
+</head>
+<body>
+    <header class="topbar">
+        <div class="logo">NutriScope</div>
+        <nav class="top-nav">
+            {% for item in menu_items %}
+            <a href="#{{ item.anchor }}">{{ item.name }}</a>
+            {% endfor %}
+        </nav>
+        <div class="user-area">
+            <span>로그인</span> | <span>회원가입</span>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="price" class="section">
+            <h2 class="section-title">💸 가격 분석</h2>
+            <div class="card-grid">
+                <div class="card">{{ price_hist|safe }}</div>
+                <div class="card">{{ price_box|safe }}</div>
+            </div>
+        </section>
+
+        <section id="brand" class="section">
+            <h2 class="section-title">⭐ 브랜드 분석</h2>
+            <div class="card-grid">
+                <div class="card">{{ brand_bar|safe }}</div>
+                <div class="card">{{ brand_pie|safe }}</div>
+            </div>
+        </section>
+
+        <section id="category" class="section">
+            <h2 class="section-title">📊 카테고리 분석</h2>
+            <div class="card-grid">
+                <div class="card">{{ category_bar|safe }}</div>
+                <div class="card">{{ category_tree|safe }}</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
