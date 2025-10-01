@@ -1,18 +1,132 @@
 <html>
   <head>
     <title>{{ title }}</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+      .container {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .product-details {
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        display: none;
+      }
+
+      .product-list {
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .product-item {
+        padding: 10px;
+        margin: 5px 0;
+        background-color: white;
+        border-radius: 4px;
+      }
+      .product-name {
+        font-weight: bold;
+        color: #333;
+      }
+      .product-info {
+        color: #666;
+        font-size: 0.9em;
+        margin-top: 5px;
+      }
+      .selected-category {
+        background-color: #e3f2fd;
+        border-left-color: #2196f3;
+      }
+    </style>
   </head>
   <body>
-    <h1>{{ title }}</h1>
-    <ul>
-      {% for key, value in data_items %}
-      <li>{{ key }} : {{ value|length }}</li>
-      <ul>
-        {% for nutri_scope_data in value %}
-        <li>{{ nutri_scope_data.product_name }}</li>
-        {% endfor %}
-      </ul>
-      {% endfor %}
-    </ul>
+    <div class="container">
+      <h1>{{ title }}</h1>
+
+      <!-- Plotly 차트 -->
+      <div id="chart" style="width: 100%; height: 500px"></div>
+
+      <!-- Plotly 원형 차트 -->
+      <div id="chart-pie" style="width: 100%; height: 500px"></div>
+
+      <!-- 선택된 카테고리의 상품 목록 -->
+      <div id="product-details" class="product-details">
+        <h3 id="selected-category-title">카테고리를 선택하세요</h3>
+        <div id="product-list"></div>
+      </div>
+
+      <script>
+        // 전역 변수
+        var chartData = {{ chart|safe }};
+        var chartPieData = {{ chart_pie|safe }};
+        var detailedData = {{ detailed_data|safe }};
+
+        // 차트 초기화
+        function initializeChart() {
+          Plotly.newPlot('chart', chartData.data, chartData.layout);
+        }
+
+        function initializeChartPie() {
+          Plotly.newPlot('chart-pie', chartPieData.data, chartPieData.layout);
+        }
+
+        // 상품 목록 표시 함수
+        function showCategoryProducts(category, count) {
+          var productDetails = document.getElementById('product-details');
+          var categoryTitle = document.getElementById('selected-category-title');
+          var productList = document.getElementById('product-list');
+
+          // 제목 업데이트
+          categoryTitle.textContent = category + ' (' + count + '개 상품)';
+
+          // 상품 목록 생성
+          var products = detailedData[category];
+          var html = '';
+
+          if (products && products.length > 0) {
+            products.forEach(function(product) {
+              html += '<div class="product-item">';
+              html += '<div class="product-name">' + product.product_name + '</div>';
+              html += '<div class="product-info">';
+              html += '브랜드: ' + (product.brand_name || 'N/A') + ' | ';
+              html += '가격: ' + (product.sale_price || 'N/A') + ' | ';
+              html += '쇼핑몰 순위: ' + (product.rank || 'N/A');
+              html += '</div>';
+              html += '</div>';
+            });
+          } else {
+            html = '<p>해당 카테고리에 상품이 없습니다.</p>';
+          }
+
+          productList.innerHTML = html;
+          productDetails.style.display = 'block';
+          productDetails.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // 이벤트 리스너 설정
+        function setupEventListeners() {
+          // 차트 클릭 이벤트
+          document.getElementById('chart').on('plotly_click', function(data){
+            var clickedCategory = data.points[0].x;
+            var productCount = data.points[0].y;
+
+            console.log('클릭된 카테고리:', clickedCategory, '상품 수:', productCount);
+            showCategoryProducts(clickedCategory, productCount);
+          });
+        }
+
+        // 페이지 로드 시 초기화
+        document.addEventListener('DOMContentLoaded', function() {
+          initializeChart();
+            initializeChartPie();
+            setupEventListeners();
+          });
+      </script>
+    </div>
   </body>
 </html>

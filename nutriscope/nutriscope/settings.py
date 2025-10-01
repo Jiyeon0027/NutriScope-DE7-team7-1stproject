@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "rest_framework",
     "common.apps.CommonConfig",  # 공통 모듈 앱 추가
     "category.apps.CategoryConfig",  # 카테고리 앱 추가
 ]
