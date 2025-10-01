@@ -5,8 +5,13 @@
   <body>
     <h1>{{ title }}</h1>
     <ul>
-      {% for nutri_scope_data in nutri_scope_data %}
-      <li>{{ nutri_scope_data.product_name }}</li>
+      {% for key, value in data_items %}
+      <li>{{ key }} : {{ value|length }}</li>
+      <ul>
+        {% for nutri_scope_data in value %}
+        <li>{{ nutri_scope_data.product_name }}</li>
+        {% endfor %}
+      </ul>
       {% endfor %}
     </ul>
   </body>
