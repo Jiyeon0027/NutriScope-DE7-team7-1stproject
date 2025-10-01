@@ -20,4 +20,7 @@ class NutriScopeData(models.Model):
     category = models.CharField(max_length=30)
 
     def __str__(self):
-        return f"{self.display_name} - {self.brand_name} - {self.category}"
+        return (
+            f"{self.id} - {self.product_name} - {self.brand_name} "
+            + f"- {self.category}"
+        )

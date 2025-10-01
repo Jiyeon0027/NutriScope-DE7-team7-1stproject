@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <ul>
+      {% for nutri_scope_data in nutri_scope_data %}
+      <li>{{ nutri_scope_data.product_name }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
