@@ -7,6 +7,19 @@
         font-family: Arial, sans-serif;
         margin: 20px;
       }
+
+      .title {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        margin: 0 auto;
+      }
+
       .product-details {
         margin-top: 20px;
         padding: 20px;
@@ -29,15 +42,18 @@
         background-color: white;
         border-radius: 4px;
       }
+
       .product-name {
         font-weight: bold;
         color: #333;
       }
+
       .product-info {
         color: #666;
         font-size: 0.9em;
         margin-top: 5px;
       }
+
       .selected-category {
         background-color: #e3f2fd;
         border-left-color: #2196f3;
@@ -46,7 +62,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>{{ title }}</h1>
+      <h1 class="title">{{ title }}</h1>
 
       <!-- Plotly 차트 -->
       <div id="chart" style="width: 100%; height: 500px"></div>
@@ -95,7 +111,7 @@
               html += '<div class="product-info">';
               html += '브랜드: ' + (product.brand_name || 'N/A') + ' | ';
               html += '가격: ' + (product.sale_price || 'N/A') + ' | ';
-              html += '쇼핑몰 순위: ' + (product.rank || 'N/A');
+              html += ' ' + product.shop_name.toUpperCase() + ' (Rank : ' + product.rank + ')';
               html += '</div>';
               html += '</div>';
             });
@@ -108,21 +124,30 @@
           productDetails.scrollIntoView({ behavior: 'smooth' });
         }
 
-        // 이벤트 리스너 설정
+         // 이벤트 리스너 설정
         function setupEventListeners() {
-          // 차트 클릭 이벤트
-          document.getElementById('chart').on('plotly_click', function(data){
+            // 막대 차트 클릭 이벤트
+            document.getElementById('chart').on('plotly_click', function(data){
             var clickedCategory = data.points[0].x;
             var productCount = data.points[0].y;
 
-            console.log('클릭된 카테고리:', clickedCategory, '상품 수:', productCount);
+            console.log('막대 차트 클릭 - 카테고리:', clickedCategory, '상품 수:', productCount);
             showCategoryProducts(clickedCategory, productCount);
           });
-        }
+
+            // 원형 차트 클릭 이벤트
+            document.getElementById('chart-pie').on('plotly_click', function(data){
+              var clickedCategory = data.points[0].label;
+              var productCount = data.points[0].value;
+
+              console.log('원형 차트 클릭 - 카테고리:', clickedCategory, '상품 수:', productCount);
+              showCategoryProducts(clickedCategory, productCount);
+            });
+          }
 
         // 페이지 로드 시 초기화
         document.addEventListener('DOMContentLoaded', function() {
-          initializeChart();
+            initializeChart();
             initializeChartPie();
             setupEventListeners();
           });

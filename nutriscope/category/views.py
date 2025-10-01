@@ -1,9 +1,12 @@
+"""Category views"""
+
+import json
+
 from django.shortcuts import render
-from django.http import HttpResponse, JsonResponse
 from common.models import NutriScopeData
 import plotly.graph_objs as go
 import plotly.utils
-import json
+
 
 # 색상 팔레트
 COLOR_PALETTE = [
@@ -52,7 +55,9 @@ def get_category_data():
 
     data = {}
     for category in categories:
-        data[category] = NutriScopeData.objects.filter(category=category)
+        data[category] = NutriScopeData.objects.filter(
+            category=category
+        ).order_by("rank")
 
     return data
 
@@ -93,13 +98,28 @@ def create_chart_pie_data(data):
     categories = list(data.keys())
     counts = [len(data[category]) for category in categories]
 
+    # 전체 상품 수 계산
+    total_count = sum(counts)
+
+    # 퍼센트 계산 및 조건부 텍스트 설정
+    text_labels = []
+    for i, count in enumerate(counts):
+        percentage = (count / total_count) * 100
+        # 5% 이상인 경우만 라벨 표시
+        if percentage >= 5:
+            text_labels.append(categories[i])
+        else:
+            text_labels.append("")  # 작은 퍼센트는 빈 문자열
+
     fig = go.Figure(
         data=[
             go.Pie(
                 labels=categories,
                 values=counts,
-                textinfo="label",
-                hole=0.4,
+                text=text_labels,  # 조건부 텍스트
+                textinfo="text",  # 텍스트
+                textposition="inside",
+                hole=0.3,
                 marker=dict(
                     colors=COLOR_PALETTE,
                 ),
@@ -111,6 +131,15 @@ def create_chart_pie_data(data):
         title="카테고리별 상품 비율",
         height=500,
         margin=dict(l=50, r=50, t=80, b=50),
+        showlegend=True,  # 범례 표시
+        legend=dict(
+            orientation="v", yanchor="middle", y=0.5, xanchor="left", x=1.02
+        ),
+    )
+
+    fig.update_traces(
+        hovertemplate="<b>%{label}</b><br>상품 수 : %{value}"
+        + "<br>비율 : %{percent}<extra></extra>"
     )
 
     return json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
