@@ -11,7 +11,7 @@ class Brand():
             self.brand_name = brand_name
     
     def __str__(self):
-        return print(f'브랜드 이름: {self.brand_name}') if self.brand_name else None
+        return f'브랜드 이름: {self.brand_name}' if self.brand_name else None
     
     
     def draw_top_famousbrand():
@@ -38,7 +38,24 @@ class Brand():
         graph_html = fig.to_html(full_html=False, include_plotlyjs='cdn')
 
         return graph_html
-    
+
+    def draw_brand_detail(self):
+        '''
+        brand_name을 입력값으로 받아 해당 브랜드의 카테고리(제품)를 파이차트로 그려내는 함수
+        '''
+        # args는 brand_name 필요하고, 데이터는 brand_name의 카테고리, count가 필요
+        results = FamousData.get_brand_data_detail(self.brand_name, "category")
+        values = []
+        names = []
+
+        for result in list(results):
+            values.append(result.get("count"))
+            names.append(result.get("category"))
+
+        fig = px.pie(values=values, names=names)
+        fig.write_html("../sample.html")
+
+        return
 
 
 class FamousBrandView(View):
@@ -47,3 +64,7 @@ class FamousBrandView(View):
 
         return render(request, 'index.html', {"graph_html": graph_html})
     
+class FamousBrandDetailView(View):
+    def get(self, request, brand_name):
+        graph_html = Brand(brand_name).brand_detail()
+        return

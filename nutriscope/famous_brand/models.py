@@ -22,3 +22,17 @@ class FamousData(NutriScopeData):
         data_list = data_list.order_by("-count")[:5]
 
         return  data_list
+    
+    def get_brand_data_detail(brand_name: str, groupfield: str):
+        '''
+        ## args를 조건으로 1차 조회, 데이터를 다시 groupfield별로 group화 하여 count를 세어 반환\n
+        args: \n
+            brand_name: 검색하고자 하는 브랜드 이름\n
+            groupfield: NutriScopeData의 field중 group by를 이용할 field\n
+        return: brand_name, groupfield, count를 count가 높은순으로 정렬한 리스트
+        '''
+
+        brand_data_list = NutriScopeData.objects.filter(brand_name=brand_name)
+        grouped_brand_data_list = brand_data_list.values(groupfield).annotate(count=Count(groupfield))
+
+        return grouped_brand_data_list
