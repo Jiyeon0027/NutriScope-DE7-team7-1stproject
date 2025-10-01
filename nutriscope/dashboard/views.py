@@ -2,16 +2,22 @@ from django.shortcuts import render
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+import plotly.utils
+import plotly
 import json
 import os
+from django.db import models
 from django.conf import settings
 from dashboard.models import Product
-
+from django.http import JsonResponse
+from django.db.models import Avg, Count
+queryset = Product.objects.all().values()
+df = pd.DataFrame(list(queryset))
 def dashboard_view(request):
     # JSON 파일 경로 설정
-    json_path = os.path.join(settings.BASE_DIR, 'merged_products_top100_categorized.json')
-    queryset = Product.objects.all().values()
-    df = pd.DataFrame(list(queryset))
+    # json_path = os.path.join(settings.BASE_DIR, 'merged_products_top100_categorized.json')
+    # queryset = Product.objects.all().values()
+    # df = pd.DataFrame(list(queryset))
     # 데이터 로드
     #df = pd.read_json(json_path)
     
@@ -89,7 +95,8 @@ def dashboard_view(request):
     fig_brand_pie = go.Figure(data=[
         go.Pie(
             labels=top_brands.index.tolist(),
-            values=top_brands.values.tolist()
+            values=top_brands.values.tolist(),
+            hole = 0.4
         )
     ])
     fig_brand_pie.update_layout(
@@ -164,3 +171,101 @@ def dashboard_view(request):
     }
     
     return render(request, 'dashboard/dashboard.html', context)
+
+#################################  product_comparison ##################################
+def product_comparison(request):
+    # 필요한 context 데이터 추가 가능
+    context = {}
+    return render(request, 'dashboard/product_comparison.html', context)
+
+def product_list_api(request):
+    # queryset = Product.objects.all().values()
+    # df = pd.DataFrame(list(queryset))
+    # id 순으로 정렬
+    products = list(Product.objects.all().order_by('id').values('id', 'shop_name', 'product_name', 'brand_name','sale_price', 'image_url', 'quantity'))
+    return JsonResponse(products, safe=False)
+
+#################################  compare table  ##################################
+def compare_table(request):
+    brand = request.GET.get('brand', '').strip()
+    product_name = request.GET.get('product_name', '').strip()
+    shop_name = request.GET.get('shop_name', '').strip()
+
+    products = Product.objects.all()
+
+    if brand:
+        products = products.filter(brand_name__icontains=brand)
+    if product_name:
+        products = products.filter(product_name__icontains=product_name)
+    if shop_name:
+        products = products.filter(shop_name__icontains=shop_name)
+
+    products = products.order_by('sale_price')  # 가격순 정렬
+
+    return render(request, 'dashboard/compare_table.html', {
+        'products': products,
+        'brand': brand,
+        'product_name': product_name,
+        'shop_name': shop_name,
+    })
+################################# base_view  ########################################
+# def base_view(request):
+#     return render(request, 'dashboard/base.html')
+def base_view(request):
+    keyword = request.GET.get('keyword', '').strip().lower()
+    sort_option = request.GET.get('sort', 'id-asc')
+
+    products = Product.objects.all()
+
+    # 검색
+    if keyword:
+        products = products.filter(
+            product_name__icontains=keyword
+        ) | products.filter(
+            brand_name__icontains=keyword
+        ) | products.filter(
+            shop_name__icontains=keyword
+        )
+
+    # 정렬
+    if sort_option == 'id-asc':
+        products = products.order_by('id')
+    elif sort_option == 'id-desc':
+        products = products.order_by('-id')
+    elif sort_option == 'price-asc':
+        products = products.order_by('sale_price')
+    elif sort_option == 'price-desc':
+        products = products.order_by('-sale_price')
+
+    # 통계
+    total_products = products.count()
+    avg_price = int(products.aggregate(avg_price=Avg('sale_price'))['avg_price'] or 0)
+    total_brands = products.values('brand_name').distinct().count()
+    total_categories = products.values('category').distinct().count()
+
+    # 쇼핑몰별 제품 수 pie chart
+    shop_counts = products.values('shop_name').annotate(count=Count('id'))
+    if shop_counts:
+        fig = px.pie(
+            names=[x['shop_name'] for x in shop_counts],
+            values=[x['count'] for x in shop_counts],
+            title="쇼핑몰별 제품 비율"
+        )
+        graph_json = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
+    else:
+        graph_json = None
+
+    context = {
+        'products': products[:5],
+        'stats': {
+            'total_products': total_products,
+            'avg_price': avg_price,
+            'total_brands': total_brands,
+            'total_categories': total_categories,
+        },
+        'graph_json': graph_json,
+        'keyword': keyword,
+        'sort_option': sort_option
+    }
+
+    return render(request, 'dashboard/base.html', context)

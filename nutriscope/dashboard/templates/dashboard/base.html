@@ -1,0 +1,219 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriScope - 상품리스트</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'dashboard/style.css' %}">
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div class="header-wrapper">
+                <div class="logo-section">
+                    <span class="project-name">NutriScope</span>
+                </div>
+                <nav class="main-nav">
+                    <a href="{% url 'dashboard' %}" class="nav-item">대시보드</a>
+                    <a href="{% url 'product_comparison' %}" class="nav-item">상품목록</a>
+                    <a href="{% url 'compare_table' %}" class="nav-item">상품비교</a>
+                    <a href="{% url 'base' %}" class="nav-item">상품리스트</a>
+                </nav>
+            </div>
+            <div class="header-subtitle">
+                <p>쇼핑몰 크롤링 데이터 분석 결과를 한눈에 확인하세요</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- 통계 + 그래프 영역 -->
+        <div class="stats-graph-section" style="display:flex; gap:2rem; margin-bottom:2rem;">
+            <!-- 왼쪽: 통계 카드 -->
+            <div class="stats-left" style="flex:1; display:flex; flex-direction:column; gap:1rem;">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-icon">📦</div>
+                        <div class="stat-label">총 제품 수</div>
+                    </div>
+                    <div class="stat-value-container">
+                        <span id="total-products" class="stat-value">{{ stats.total_products|floatformat:0 }}</span>
+                        <span class="stat-unit">개</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-icon">💰</div>
+                        <div class="stat-label">평균 가격</div>
+                    </div>
+                    <div class="stat-value-container">
+                        <span id="avg-price" class="stat-value">{{ stats.avg_price|floatformat:0 }}</span>
+                        <span class="stat-unit">원</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 오른쪽: 쇼핑몰 비율 Pie chart -->
+            <div class="stats-right" style="flex:1;">
+                <div id="shop-pie-chart" style="width:100%; height:300px;"></div>
+            </div>
+        </div>
+
+        <!-- 검색 + 상품 목록 -->
+        <div class="chart-section">
+            <h2 class="section-title">상품 목록</h2>
+            <div class="mb-3" style="display:flex; gap:1rem; align-items:center;">
+                <input type="text" class="form-control" id="search-title" placeholder="Enter product name">
+                <select id="sort-select" class="form-select">
+                    <option value="id-asc" selected>ID 오름차순</option>
+                    <option value="id-desc">ID 내림차순</option>
+                    <option value="price-asc">가격 오름차순</option>
+                    <option value="price-desc">가격 내림차순</option>
+                </select>
+                <button class="btn btn-secondary" id="search-btn">Search</button>
+            </div>
+
+            <div id="product-list"></div>
+            <div id="pagination-info" class="text-center mt-3"></div>
+            <div class="text-center">
+                <button id="previous" class="btn btn-outline-secondary">Previous</button>
+                <button id="next" class="btn btn-outline-secondary">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Pie chart 초기 렌더링
+        {% if graph_json %}
+        Plotly.newPlot('shop-pie-chart', {{ graph_json|safe }});
+        {% endif %}
+
+        // Product 리스트 및 페이징
+        let allProducts = [];  
+        let products = [];     
+        let currentPage = 1;
+        const itemsPerPage = 5;
+        let totalPages = 1;
+
+        async function loadProducts() {
+            try {
+                const response = await fetch("{% url 'product_list_api' %}");
+                allProducts = await response.json();
+                products = [...allProducts];
+                sortProducts('id-asc');
+                totalPages = Math.ceil(products.length / itemsPerPage);
+                displayProductsForPage(currentPage);
+                updateStatsAndChart(products);
+            } catch (error) {
+                console.error(error);
+                document.getElementById('product-list').innerHTML = '<p>Error loading products</p>';
+            }
+        }
+
+        function displayProductsForPage(page) {
+            const start = (page - 1) * itemsPerPage;
+            const end = Math.min(start + itemsPerPage, products.length);
+            const currentItems = products.slice(start, end);
+            const listContainer = document.getElementById('product-list');
+            listContainer.innerHTML = '';
+
+            if (currentItems.length === 0) {
+                listContainer.innerHTML = '<p>No products to display</p>';
+                return;
+            }
+
+            currentItems.forEach(p => {
+                listContainer.innerHTML += `
+                    <div class="stat-card" style="display:flex; gap:1rem; align-items:center; padding:10px;">
+                        <div style="flex:1; max-width:200px;">
+                            <img src="${p.image_url}" alt="${p.product_name}" 
+                                style="width:100%; height:200px; object-fit:contain; border-radius:10px; background:#f9f9f9;">
+                        </div>
+                        <div style="flex:2; display:flex; flex-direction:column; justify-content:center;">
+                            <h3>${p.id}. ${p.product_name}</h3>
+                            <p><strong>Shop:</strong> ${p.shop_name}</p>
+                            <p><strong>Brand:</strong> ${p.brand_name}</p>
+                            <p><strong>Quantity:</strong> ${p.quantity}</p>
+                            <p><strong>Price:</strong> ${p.sale_price}원</p>
+                        </div>
+                    </div>
+                `;
+            });
+            document.getElementById('pagination-info').innerText = `${page} / ${totalPages}`;
+        }
+
+        function updateStatsAndChart(productsList) {
+            // 총 제품 수
+            document.getElementById('total-products').innerText = productsList.length;
+
+            // 평균 가격
+            const avgPrice = productsList.length 
+                ? Math.round(productsList.reduce((sum, p) => sum + p.sale_price, 0) / productsList.length)
+                : 0;
+            document.getElementById('avg-price').innerText = avgPrice;
+
+            // 쇼핑몰 Pie chart
+            const shopCounts = {};
+            productsList.forEach(p => shopCounts[p.shop_name] = (shopCounts[p.shop_name] || 0) + 1);
+
+            const chartData = [{
+                type: 'pie',
+                labels: Object.keys(shopCounts),
+                values: Object.values(shopCounts),
+                hole: 0.4
+            }];
+            const layout = {title: "쇼핑몰별 제품 비율", height: 300};
+
+            Plotly.newPlot('shop-pie-chart', chartData, layout, {responsive:true});
+        }
+
+        function sortProducts(option) {
+            switch(option) {
+                case 'id-asc': products.sort((a,b)=>a.id-b.id); break;
+                case 'id-desc': products.sort((a,b)=>b.id-a.id); break;
+                case 'price-asc': products.sort((a,b)=>a.sale_price-b.sale_price); break;
+                case 'price-desc': products.sort((a,b)=>b.sale_price-a.sale_price); break;
+            }
+        }
+
+        document.getElementById('search-btn').addEventListener('click', function() {
+            const keyword = document.getElementById('search-title').value.trim().toLowerCase();
+            products = keyword ? allProducts.filter(p =>
+                p.product_name.toLowerCase().includes(keyword) ||
+                p.brand_name.toLowerCase().includes(keyword) ||
+                p.shop_name.toLowerCase().includes(keyword)
+            ) : [...allProducts];
+
+            const sortOption = document.getElementById('sort-select').value;
+            sortProducts(sortOption);
+
+            currentPage = 1;
+            totalPages = Math.ceil(products.length / itemsPerPage);
+            displayProductsForPage(currentPage);
+            updateStatsAndChart(products);
+        });
+
+        document.getElementById('sort-select').addEventListener('change', function() {
+            sortProducts(this.value);
+            currentPage = 1;
+            displayProductsForPage(currentPage);
+        });
+
+        document.getElementById('next').addEventListener('click', function() {
+            if(currentPage < totalPages) { currentPage++; displayProductsForPage(currentPage); }
+        });
+
+        document.getElementById('previous').addEventListener('click', function() {
+            if(currentPage > 1) { currentPage--; displayProductsForPage(currentPage); }
+        });
+
+        loadProducts();
+    });
+    </script>
+</body>
+</html>
