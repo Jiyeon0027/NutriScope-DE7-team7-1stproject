@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriScope - 대시보드</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'dashboard/style.css' %}">
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div class="header-wrapper">
+                <div class="logo-section">
+                    <span class="project-name">NutriScope</span>
+                </div>
+                <nav class="main-nav">
+                    <!--추가할 페이지 링크-->
+                    <a href="{% url 'dashboard' %}" class="nav-item">대시보드</a>
+                    <a href="{% url 'product_comparison' %}" class="nav-item">상품목록</a>
+                    <a href="{% url 'compare_table' %}" class="nav-item">상품비교</a>
+                    <a href="{% url 'base' %}" class="nav-item">상품리스트</a>
+                </nav>
+            </div>
+            <div class="header-subtitle">
+                <!-- 간단한 소개글 써주면 좋아요-->
+                <p>쇼핑몰 크롤링 데이터 분석 결과를 한눈에 확인하세요</p>
+            </div>
+        </div>
+    </div>    
+    <!-- container 안에다가 입력하기 !!-->
+    <div class="container">
+
+
+
+    </div>
+</body>
+</html>
