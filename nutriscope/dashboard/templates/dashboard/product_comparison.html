@@ -1,55 +1,58 @@
-
 {% load static %}
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NutriScope - 통합랭킹</title>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'dashboard/style.css' %}">
+    <link
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'dashboard/style.css' %}" />
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        let allProducts = [];  // 전체 데이터 (원본)
-        let products = [];     // 현재 표시할 데이터
+      document.addEventListener("DOMContentLoaded", function () {
+        let allProducts = []; // 전체 데이터 (원본)
+        let products = []; // 현재 표시할 데이터
         let currentPage = 1;
         const itemsPerPage = 5;
         let totalPages = 1;
 
         // 서버에서 Product 데이터를 가져오는 함수
         async function loadProducts() {
-            try {
-                let response = await fetch("{% url 'product_list_api' %}");  
-                if (!response.ok) throw new Error('Failed to load products');
-                allProducts = await response.json();  // 원본 저장
-                products = [...allProducts];          // 표시할 데이터 초기화
+          try {
+            let response = await fetch("{% url 'product_list_api' %}");
+            if (!response.ok) throw new Error("Failed to load products");
+            allProducts = await response.json(); // 원본 저장
+            products = [...allProducts]; // 표시할 데이터 초기화
 
-                products.sort((a, b) => a.id - b.id);
-                totalPages = Math.ceil(products.length / itemsPerPage);
-                displayProductsForPage(currentPage);
-            } catch (error) {
-                console.error(error);
-                document.getElementById('product-list').innerHTML = '<p>Error loading products</p>';
-            }
+            products.sort((a, b) => a.id - b.id);
+            totalPages = Math.ceil(products.length / itemsPerPage);
+            displayProductsForPage(currentPage);
+          } catch (error) {
+            console.error(error);
+            document.getElementById("product-list").innerHTML =
+              "<p>Error loading products</p>";
+          }
         }
 
         // 페이지에 맞춰 Product 표시
         function displayProductsForPage(page) {
-            const start = (page - 1) * itemsPerPage;
-            const end = Math.min(start + itemsPerPage, products.length);
-            const currentItems = products.slice(start, end);
+          const start = (page - 1) * itemsPerPage;
+          const end = Math.min(start + itemsPerPage, products.length);
+          const currentItems = products.slice(start, end);
 
-            const listContainer = document.getElementById('product-list');
-            listContainer.innerHTML = '';
+          const listContainer = document.getElementById("product-list");
+          listContainer.innerHTML = "";
 
-            if (currentItems.length === 0) {
-                listContainer.innerHTML = '<p>No products to display</p>';
-                return;
-            }
+          if (currentItems.length === 0) {
+            listContainer.innerHTML = "<p>No products to display</p>";
+            return;
+          }
 
-            currentItems.forEach(p => {
-                listContainer.innerHTML += `
+          currentItems.forEach((p) => {
+            listContainer.innerHTML += `
                     <div class="stat-card" style="display:flex; gap:1rem; align-items:center; padding:10px;">
                         <!-- 왼쪽: 이미지 -->
                         <div style="flex:1; max-width:200px;">
@@ -67,97 +70,119 @@
                         </div>
                     </div>
                 `;
-            });
+          });
 
-
-            document.getElementById('pagination-info').innerText = `${page} / ${totalPages}`;
+          document.getElementById(
+            "pagination-info"
+          ).innerText = `${page} / ${totalPages}`;
         }
 
         // 검색 기능
-        document.getElementById('search-btn').addEventListener('click', function() {
-            const keyword = document.getElementById('search-title').value.trim().toLowerCase();
+        document
+          .getElementById("search-btn")
+          .addEventListener("click", function () {
+            const keyword = document
+              .getElementById("search-title")
+              .value.trim()
+              .toLowerCase();
 
             if (!keyword) {
-                products = [...allProducts];  // 키워드 없으면 전체 복원
+              products = [...allProducts]; // 키워드 없으면 전체 복원
             } else {
-                products = allProducts.filter(p => 
-                    p.product_name.toLowerCase().includes(keyword) ||
-                    p.brand_name.toLowerCase().includes(keyword) ||
-                    p.shop_name.toLowerCase().includes(keyword)
-                );
+              products = allProducts.filter(
+                (p) =>
+                  p.product_name.toLowerCase().includes(keyword) ||
+                  p.brand_name.toLowerCase().includes(keyword) ||
+                  p.shop_name.toLowerCase().includes(keyword)
+              );
             }
 
             currentPage = 1;
             totalPages = Math.ceil(products.length / itemsPerPage);
             displayProductsForPage(currentPage);
-        });
+          });
 
         // 페이지 이동
-        document.getElementById('next').addEventListener('click', function() {
-            if (currentPage < totalPages) {
-                currentPage++;
-                displayProductsForPage(currentPage);
-            }
+        document.getElementById("next").addEventListener("click", function () {
+          if (currentPage < totalPages) {
+            currentPage++;
+            displayProductsForPage(currentPage);
+          }
         });
 
-        document.getElementById('previous').addEventListener('click', function() {
+        document
+          .getElementById("previous")
+          .addEventListener("click", function () {
             if (currentPage > 1) {
-                currentPage--;
-                displayProductsForPage(currentPage);
+              currentPage--;
+              displayProductsForPage(currentPage);
             }
-        });
+          });
 
         // 초기 로드
         loadProducts();
-    });
+      });
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <div class="header-content">
-            <div class="header-wrapper">
-                <div class="logo-section">
-                    <span class="project-name">NutriScope</span>
-                </div>
-                <nav class="main-nav">
-                    <a href="{% url 'dashboard' %}" class="nav-item">대시보드</a>
-                    <a href="{% url 'product_comparison' %}" class="nav-item active">상품목록</a>
-                    <a href="{% url 'compare_table' %}" class="nav-item">상품비교</a>
-                    <a href="{% url 'base' %}" class="nav-item">상품리스트</a>
-                    <a href="{% url 'category_price' %}" class="nav-item">카테고리별 보기</a>
-                </nav>
-            </div>
-            <div class="header-subtitle">
-                <p>쇼핑몰 크롤링 데이터 분석 결과를 한눈에 확인하세요</p>
-            </div>
+      <div class="header-content">
+        <div class="header-wrapper">
+          <div class="logo-section">
+            <span class="project-name">NutriScope</span>
+          </div>
+          <nav class="main-nav">
+            <a href="{% url 'dashboard' %}" class="nav-item">대시보드</a>
+            <a href="{% url 'product_comparison' %}" class="nav-item active"
+              >상품목록</a
+            >
+            <a href="{% url 'compare_table' %}" class="nav-item">상품비교</a>
+            <a href="{% url 'base' %}" class="nav-item">상품리스트</a>
+            <a href="{% url 'category_price' %}" class="nav-item"
+              >카테고리별 보기</a
+            >
+            <a href="{% url 'category:index' %}" class="nav-item"
+              >카테고리 분석</a
+            >
+          </nav>
         </div>
+        <div class="header-subtitle">
+          <p>쇼핑몰 크롤링 데이터 분석 결과를 한눈에 확인하세요</p>
+        </div>
+      </div>
     </div>
 
     <!-- 페이지별 콘텐츠 -->
     {% comment %} Product 검색 및 목록 표시 {% endcomment %}
 
     <div class="container">
-        <div class="chart-section">
-            <h2 class="section-title">상품 목록</h2>
+      <div class="chart-section">
+        <h2 class="section-title">상품 목록</h2>
 
-            <!-- 검색창 -->
-            <div class="mb-3">
-                <label for="search-title" class="form-label">Search Products</label>
-                <input type="text" class="form-control" id="search-title" placeholder="Enter product name">
-                <button class="btn btn-secondary mt-2" id="search-btn">Search</button>
-            </div>
-
-            <!-- Product 목록 -->
-            <div id="product-list"></div>
-
-            <!-- 페이지네이션 -->
-            <div id="pagination-info" class="text-center mt-3"></div>
-            <div class="text-center">
-                <button id="previous" class="btn btn-outline-secondary">Previous</button>
-                <button id="next" class="btn btn-outline-secondary">Next</button>
-            </div>
+        <!-- 검색창 -->
+        <div class="mb-3">
+          <label for="search-title" class="form-label">Search Products</label>
+          <input
+            type="text"
+            class="form-control"
+            id="search-title"
+            placeholder="Enter product name"
+          />
+          <button class="btn btn-secondary mt-2" id="search-btn">Search</button>
         </div>
+
+        <!-- Product 목록 -->
+        <div id="product-list"></div>
+
+        <!-- 페이지네이션 -->
+        <div id="pagination-info" class="text-center mt-3"></div>
+        <div class="text-center">
+          <button id="previous" class="btn btn-outline-secondary">
+            Previous
+          </button>
+          <button id="next" class="btn btn-outline-secondary">Next</button>
+        </div>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
