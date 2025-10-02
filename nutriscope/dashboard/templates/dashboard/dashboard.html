@@ -1,187 +1,240 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NutriScope - 대시보드</title>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'dashboard/style.css' %}">
-</head>
-<body>
-    {% comment %} <div class="header">
-        <div class="header-content">
-            <div class="header-wrapper">
-                <!-- 로고 영역 -->
-                <div class="logo-section">
-                    <span class="project-name">NutriScope</span>
-                </div>
-                
-                <!-- 내비게이션 영역 -->
-                <nav class="main-nav">
-                    <a href="{% url 'dashboard' %}" class="nav-item">대시보드</a>
-                    <a href="{% url 'product_comparison' %}" class="nav-item">상품목록</a>
-                    <a href="{% url 'compare_table' %}" class="nav-item">상품비교</a>
-                    <a href="{% url 'base' %}" class="nav-item">상품리스트</a>
-                </nav>
-                
-                <!-- 우측 액션 영역 (옵션) -->
-                <div class="header-actions">
-                    <button class="icon-btn">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            
-            <!-- 서브 텍스트 (선택사항) -->
-            <div class="header-subtitle">
-                <p>쇼핑몰 크롤링 데이터 분석 결과를 한눈에 확인하세요</p>
-            </div>
-        </div>
-    </div> {% endcomment %}
+    <link
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'dashboard/style.css' %}" />
+  </head>
+  <body>
+    {% comment %}
     <div class="header">
-        <div class="header-content">
-            <div class="header-wrapper">
-                <div class="logo-section">
-                    <span class="project-name">NutriScope</span>
-                </div>
-                <nav class="main-nav">
-                    <a href="{% url 'dashboard' %}" class="nav-item active">대시보드</a>
-                    <a href="{% url 'product_comparison' %}" class="nav-item">상품목록</a>
-                    <a href="{% url 'compare_table' %}" class="nav-item">상품비교</a>
-                    <a href="{% url 'base' %}" class="nav-item">상품리스트</a>
-                    <a href="{% url 'category_price' %}" class="nav-item">카테고리별 보기</a>
-                </nav>
-            </div>
-            <div class="header-subtitle">
-                <p>쇼핑몰 크롤링 데이터 분석 결과를 한눈에 확인하세요</p>
-            </div>
+      <div class="header-content">
+        <div class="header-wrapper">
+          <!-- 로고 영역 -->
+          <div class="logo-section">
+            <span class="project-name">NutriScope</span>
+          </div>
+
+          <!-- 내비게이션 영역 -->
+          <nav class="main-nav">
+            <a href="{% url 'dashboard' %}" class="nav-item">대시보드</a>
+            <a href="{% url 'product_comparison' %}" class="nav-item"
+              >상품목록</a
+            >
+            <a href="{% url 'compare_table' %}" class="nav-item">상품비교</a>
+            <a href="{% url 'base' %}" class="nav-item">상품리스트</a>
+          </nav>
+
+          <!-- 우측 액션 영역 (옵션) -->
+          <div class="header-actions">
+            <button class="icon-btn">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+            </button>
+          </div>
         </div>
-    </div>    
+
+        <!-- 서브 텍스트 (선택사항) -->
+        <div class="header-subtitle">
+          <p>쇼핑몰 크롤링 데이터 분석 결과를 한눈에 확인하세요</p>
+        </div>
+      </div>
+    </div>
+    {% endcomment %}
+    <div class="header">
+      <div class="header-content">
+        <div class="header-wrapper">
+          <div class="logo-section">
+            <span class="project-name">NutriScope</span>
+          </div>
+          <nav class="main-nav">
+            <a href="{% url 'dashboard' %}" class="nav-item active">대시보드</a>
+            <a href="{% url 'product_comparison' %}" class="nav-item"
+              >상품목록</a
+            >
+            <a href="{% url 'compare_table' %}" class="nav-item">상품비교</a>
+            <a href="{% url 'base' %}" class="nav-item">상품리스트</a>
+            <a href="{% url 'category_price' %}" class="nav-item"
+              >카테고리별 보기</a
+            >
+            <a href="{% url 'category:index' %}" class="nav-item"
+              >카테고리 분석</a
+            >
+          </nav>
+        </div>
+        <div class="header-subtitle">
+          <p>쇼핑몰 크롤링 데이터 분석 결과를 한눈에 확인하세요</p>
+        </div>
+      </div>
+    </div>
 
     <div class="container">
-        <!-- 통계 카드 그리드 -->
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-header">
-                    <div class="stat-icon">📦</div>
-                    <div class="stat-label">총 제품 수</div>
-                </div>
-                <div class="stat-value-container">
-                    <span class="stat-value">{{ stats.total_products|floatformat:0 }}</span>
-                    <span class="stat-unit">개</span>
-                </div>
-            </div>
-
-            <div class="stat-card">
-                <div class="stat-header">
-                    <div class="stat-icon">💰</div>
-                    <div class="stat-label">평균 가격</div>
-                </div>
-                <div class="stat-value-container">
-                    <span class="stat-value">{{ stats.avg_price|floatformat:0 }}</span>
-                    <span class="stat-unit">원</span>
-                </div>
-            </div>
-
-            <div class="stat-card">
-                <div class="stat-header">
-                    <div class="stat-icon">🏷️</div>
-                    <div class="stat-label">브랜드 수</div>
-                </div>
-                <div class="stat-value-container">
-                    <span class="stat-value">{{ stats.total_brands }}</span>
-                    <span class="stat-unit">개</span>
-                </div>
-            </div>
-
-            <div class="stat-card">
-                <div class="stat-header">
-                    <div class="stat-icon">📊</div>
-                    <div class="stat-label">카테고리 수</div>
-                </div>
-                <div class="stat-value-container">
-                    <span class="stat-value">{{ stats.total_categories }}</span>
-                    <span class="stat-unit">개</span>
-                </div>
-            </div>
+      <!-- 통계 카드 그리드 -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-header">
+            <div class="stat-icon">📦</div>
+            <div class="stat-label">총 제품 수</div>
+          </div>
+          <div class="stat-value-container">
+            <span class="stat-value"
+              >{{ stats.total_products|floatformat:0 }}</span
+            >
+            <span class="stat-unit">개</span>
+          </div>
         </div>
 
-        <!-- 가격 분포 섹션 -->
-        <div class="chart-section">
-            <div class="section-header">
-                <div class="section-title">
-                    <span class="section-icon">💰</span>
-                    <span>가격 분포 분석</span>
-                </div>
-                <div class="badge">PRICE</div>
-            </div>
-            <div class="two-col-grid">
-                <div class="chart-container" id="histogram"></div>
-                <div class="chart-container" id="boxplot"></div>
-            </div>
+        <div class="stat-card">
+          <div class="stat-header">
+            <div class="stat-icon">💰</div>
+            <div class="stat-label">평균 가격</div>
+          </div>
+          <div class="stat-value-container">
+            <span class="stat-value">{{ stats.avg_price|floatformat:0 }}</span>
+            <span class="stat-unit">원</span>
+          </div>
         </div>
 
-        <div class="divider"></div>
-
-        <!-- 브랜드 분석 섹션 -->
-        <div class="chart-section">
-            <div class="section-header">
-                <div class="section-title">
-                    <span class="section-icon">🏆</span>
-                    <span>인기 브랜드 Top 10</span>
-                </div>
-                <div class="badge">BRAND</div>
-            </div>
-            <div class="two-col-grid">
-                <div class="chart-container" id="brand-bar"></div>
-                <div class="chart-container" id="brand-pie"></div>
-            </div>
+        <div class="stat-card">
+          <div class="stat-header">
+            <div class="stat-icon">🏷️</div>
+            <div class="stat-label">브랜드 수</div>
+          </div>
+          <div class="stat-value-container">
+            <span class="stat-value">{{ stats.total_brands }}</span>
+            <span class="stat-unit">개</span>
+          </div>
         </div>
 
-        <div class="divider"></div>
-
-        <!-- 카테고리 분석 섹션 -->
-        <div class="chart-section">
-            <div class="section-header">
-                <div class="section-title">
-                    <span class="section-icon">📊</span>
-                    <span>카테고리별 분석</span>
-                </div>
-                <div class="badge">CATEGORY</div>
-            </div>
-            <div class="two-col-grid">
-                <div class="chart-container" id="category-bar"></div>
-                <div class="chart-container" id="category-tree"></div>
-            </div>
+        <div class="stat-card">
+          <div class="stat-header">
+            <div class="stat-icon">📊</div>
+            <div class="stat-label">카테고리 수</div>
+          </div>
+          <div class="stat-value-container">
+            <span class="stat-value">{{ stats.total_categories }}</span>
+            <span class="stat-unit">개</span>
+          </div>
         </div>
+      </div>
+
+      <!-- 가격 분포 섹션 -->
+      <div class="chart-section">
+        <div class="section-header">
+          <div class="section-title">
+            <span class="section-icon">💰</span>
+            <span>가격 분포 분석</span>
+          </div>
+          <div class="badge">PRICE</div>
+        </div>
+        <div class="two-col-grid">
+          <div class="chart-container" id="histogram"></div>
+          <div class="chart-container" id="boxplot"></div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- 브랜드 분석 섹션 -->
+      <div class="chart-section">
+        <div class="section-header">
+          <div class="section-title">
+            <span class="section-icon">🏆</span>
+            <span>인기 브랜드 Top 10</span>
+          </div>
+          <div class="badge">BRAND</div>
+        </div>
+        <div class="two-col-grid">
+          <div class="chart-container" id="brand-bar"></div>
+          <div class="chart-container" id="brand-pie"></div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- 카테고리 분석 섹션 -->
+      <div class="chart-section">
+        <div class="section-header">
+          <div class="section-title">
+            <span class="section-icon">📊</span>
+            <span>카테고리별 분석</span>
+          </div>
+          <div class="badge">CATEGORY</div>
+        </div>
+        <div class="two-col-grid">
+          <div class="chart-container" id="category-bar"></div>
+          <div class="chart-container" id="category-tree"></div>
+        </div>
+      </div>
     </div>
 
     <script>
-        // Django에서 전달받은 Plotly JSON 데이터 파싱
-        const histogramData = JSON.parse('{{ histogram_json|escapejs }}');
-        const boxData = JSON.parse('{{ box_json|escapejs }}');
-        const brandBarData = JSON.parse('{{ brand_bar_json|escapejs }}');
-        const brandPieData = JSON.parse('{{ brand_pie_json|escapejs }}');
-        const categoryBarData = JSON.parse('{{ category_bar_json|escapejs }}');
-        const categoryTreeData = JSON.parse('{{ category_tree_json|escapejs }}');
+      // Django에서 전달받은 Plotly JSON 데이터 파싱
+      const histogramData = JSON.parse("{{ histogram_json|escapejs }}");
+      const boxData = JSON.parse("{{ box_json|escapejs }}");
+      const brandBarData = JSON.parse("{{ brand_bar_json|escapejs }}");
+      const brandPieData = JSON.parse("{{ brand_pie_json|escapejs }}");
+      const categoryBarData = JSON.parse("{{ category_bar_json|escapejs }}");
+      const categoryTreeData = JSON.parse("{{ category_tree_json|escapejs }}");
 
-        const commonConfig = {
-            responsive: true,
-            displayModeBar: false
-        };
+      const commonConfig = {
+        responsive: true,
+        displayModeBar: false,
+      };
 
-        // Plotly 차트 렌더링
-        if (histogramData && histogramData.data) Plotly.newPlot('histogram', histogramData.data, histogramData.layout, commonConfig);
-        if (boxData && boxData.data) Plotly.newPlot('boxplot', boxData.data, boxData.layout, commonConfig);
-        if (brandBarData && brandBarData.data) Plotly.newPlot('brand-bar', brandBarData.data, brandBarData.layout, commonConfig);
-        if (brandPieData && brandPieData.data) Plotly.newPlot('brand-pie', brandPieData.data, brandPieData.layout, commonConfig);
-        if (categoryBarData && categoryBarData.data) Plotly.newPlot('category-bar', categoryBarData.data, categoryBarData.layout, commonConfig);
-        if (categoryTreeData && categoryTreeData.data) Plotly.newPlot('category-tree', categoryTreeData.data, categoryTreeData.layout, commonConfig);
+      // Plotly 차트 렌더링
+      if (histogramData && histogramData.data)
+        Plotly.newPlot(
+          "histogram",
+          histogramData.data,
+          histogramData.layout,
+          commonConfig
+        );
+      if (boxData && boxData.data)
+        Plotly.newPlot("boxplot", boxData.data, boxData.layout, commonConfig);
+      if (brandBarData && brandBarData.data)
+        Plotly.newPlot(
+          "brand-bar",
+          brandBarData.data,
+          brandBarData.layout,
+          commonConfig
+        );
+      if (brandPieData && brandPieData.data)
+        Plotly.newPlot(
+          "brand-pie",
+          brandPieData.data,
+          brandPieData.layout,
+          commonConfig
+        );
+      if (categoryBarData && categoryBarData.data)
+        Plotly.newPlot(
+          "category-bar",
+          categoryBarData.data,
+          categoryBarData.layout,
+          commonConfig
+        );
+      if (categoryTreeData && categoryTreeData.data)
+        Plotly.newPlot(
+          "category-tree",
+          categoryTreeData.data,
+          categoryTreeData.layout,
+          commonConfig
+        );
     </script>
-</body>
+  </body>
 </html>
