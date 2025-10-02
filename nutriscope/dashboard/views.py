@@ -1,17 +1,17 @@
+from django.shortcuts import render
 import pandas as pd
-import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
 import plotly.utils
 import plotly
 import json
 import os
-from django.shortcuts import render
 from django.db import models
 from django.conf import settings
 from dashboard.models import Product
 from django.http import JsonResponse
 from django.db.models import Avg, Count
+from famous_brand.controllers import *
 queryset = Product.objects.all().values()
 df = pd.DataFrame(list(queryset))
 def dashboard_view(request):
@@ -64,6 +64,12 @@ def dashboard_view(request):
     )
     
     # 3. 인기 브랜드 Top 10
+
+    brand_name = request.GET.get("brand_name", "brand_name") # query가 있을경우 "brand_name"을 인자로 받는다. 없을경우 "brand_name"을 default로 리턴
+    brand_graph_bar = Brand(brand_name).draw_top_chart('bar')
+    brand_graph_pie = Brand(brand_name).draw_top_chart('pie')
+
+    '''
     n = 10
     brand_counts = df['brand_name'].value_counts()
     top_brands = brand_counts.head(n)
@@ -107,6 +113,7 @@ def dashboard_view(request):
         font=dict(family="Pretendard, sans-serif"),
         margin=dict(t=60, b=40, l=40, r=40)
     )
+    '''
     
     # 4. 카테고리별 상품 수
     category_counts = df['category'].value_counts()
@@ -164,8 +171,8 @@ def dashboard_view(request):
     context = {
         'histogram_json': json.dumps(fig_histogram.to_dict()),
         'box_json': json.dumps(fig_box.to_dict()),
-        'brand_bar_json': json.dumps(fig_brand_bar.to_dict()),
-        'brand_pie_json': json.dumps(fig_brand_pie.to_dict()),
+        'brand_bar_json': json.dumps(brand_graph_bar.to_dict()),
+        'brand_pie_json': json.dumps(brand_graph_pie.to_dict()),
         'category_bar_json': json.dumps(fig_category_bar.to_dict()),
         'category_tree_json': json.dumps(fig_category_tree.to_dict()),
         'stats': stats,

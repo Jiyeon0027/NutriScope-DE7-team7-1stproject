@@ -50,16 +50,14 @@ class Brand():
                 layout=go.Layout(
                     title=go.layout.Title(text=f"Top{nums} 인기 브랜드"),
                     yaxis={'categoryorder': 'total ascending'},  # 제일 높은값이 제일 위로 가게 만드는 layout
-                    width=500,
-                    height=370,
+                    width=632,
+                    height=479,
                     autosize=True,
                     clickmode='event'
                 )
             )
-        
-            graph_json = fig.to_json()
             
-            return graph_json
+            return fig
         
         elif chart_type == "pie":
             values = []
@@ -69,11 +67,22 @@ class Brand():
                 values.append(result.get("count"))
                 names.append(result.get(grouped_field))
             
-            fig = px.pie(values=values, names=names, width=500, height=370, title=f"Top{nums} 인기 브랜드")
-            fig.update_traces(textinfo='label+percent')
-            graph_json = fig.to_json()
+            fig = go.Figure(data=[
+            go.Pie(
+                labels=names,
+                values=values,
+                hole = 0.4
+            )
+            ])
+            fig.update_layout(
+                title=f"Top {nums} 브랜드 비율",
+                plot_bgcolor='rgba(0,0,0,0)',
+                paper_bgcolor='rgba(0,0,0,0)',
+                font=dict(family="Pretendard, sans-serif"),
+                margin=dict(t=60, b=40, l=40, r=40)
+            )
 
-            return graph_json
+            return fig
         
         else:
             raise ValueError("chart_type은 'pie' 혹은 'bar'형태로만 가능합니다")
