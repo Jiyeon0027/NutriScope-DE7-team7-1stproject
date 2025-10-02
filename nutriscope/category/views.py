@@ -126,6 +126,7 @@ def prepare_detailed_data(data):
                 "brand_name": product.brand_name,
                 "sale_price": product.sale_price,
                 "rank": product.rank,
+                "image_url": product.image_url,
             }
             for product in products
         ]

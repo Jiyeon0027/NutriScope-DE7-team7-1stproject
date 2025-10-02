@@ -53,21 +53,138 @@
       }
 
       .product-item {
-        padding: 10px;
-        margin: 5px 0;
-        background-color: white;
-        border-radius: 4px;
+        padding: 16px;
+        margin: 10px auto;
+        background: linear-gradient(to right, #ffffff 0%, #f8f9fa 100%);
+        border-radius: 8px;
+        border-left: 4px solid #ddd;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 800px;
+      }
+
+      .product-item:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        transform: translateX(5px);
+        border-left-color: #ff6b6b;
+        position: relative;
+      }
+
+      .product-item:hover .product-image {
+        display: block;
+      }
+
+      .product-image {
+        display: none;
+        position: absolute;
+        top: 50%;
+        right: -300px;
+        transform: translateY(-50%);
+        width: 250px;
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        border: 2px solid #fff;
+      }
+
+      .product-item:hover::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -140px;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-right: 8px solid #fff;
+        z-index: 1001;
+      }
+
+      .product-main {
+        flex: 1;
       }
 
       .product-name {
         font-weight: bold;
         color: #333;
+        font-size: 1.1em;
+        margin-bottom: 8px;
       }
 
       .product-info {
         color: #666;
         font-size: 0.9em;
-        margin-top: 5px;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .info-badge {
+        background-color: #f0f0f0;
+        padding: 4px 10px;
+        border-radius: 4px;
+        display: inline-block;
+      }
+
+      .brand {
+        color: #2196f3;
+        font-weight: 600;
+      }
+      .price {
+        color: #e91e63;
+        font-weight: bold;
+      }
+      .shop {
+        color: #666;
+        text-transform: uppercase;
+        font-size: 0.85em;
+      }
+
+      .rank-badge {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 1.2em;
+        min-width: 60px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+        white-space: nowrap;
+      }
+
+      .rank-badge.top-1 {
+        background: linear-gradient(
+          135deg,
+          rgb(255, 0, 0) 0%,
+          rgb(246, 99, 59) 100%
+        );
+        font-size: 1.4em;
+        box-shadow: 0 4px 12px rgba(176, 114, 66, 0.5);
+      }
+
+      .rank-badge.top-10 {
+        background: linear-gradient(
+          135deg,
+          rgb(255, 194, 26) 0%,
+          rgb(247, 217, 48) 100%
+        );
+      }
+
+      .rank-badge.top-20 {
+        background: linear-gradient(
+          135deg,
+          rgb(49, 66, 94) 0%,
+          rgb(76, 141, 174) 100%
+        );
       }
 
       .selected-category {
@@ -136,13 +253,30 @@
 
           if (products && products.length > 0) {
             products.forEach(function(product) {
+              var rankClass = '';
+              var rankBadge = '';
+
+              if (product.rank <= 20) {
+                if (product.rank === 1) rankClass = 'top-1';
+                else if (product.rank <= 10) rankClass = 'top-10';
+                else if (product.rank <= 20) rankClass = 'top-20';
+
+                rankBadge = '<div class="rank-badge ' + rankClass + '">' + product.shop_name.toUpperCase() + ' ' + product.rank + '위</div>';
+              }
+
               html += '<div class="product-item">';
-              html += '<div class="product-name">' + product.product_name + '</div>';
-              html += '<div class="product-info">';
-              html += '브랜드: ' + (product.brand_name || 'N/A') + ' | ';
-              html += '가격: ' + (product.sale_price || 'N/A') + ' | ';
-              html += ' ' + product.shop_name.toUpperCase() + ' (Rank : ' + product.rank + ')';
-              html += '</div>';
+              if (product.image_url) {
+                html += '  <div class="product-image" style="background-image: url(' + product.image_url + ')"></div>';
+              }
+              html += '  <div class="product-main">';
+              html += '    <div class="product-name">' + product.product_name + '</div>';
+              html += '    <div class="product-info">';
+              html += '      <span class="brand">🏷️ ' + (product.brand_name || 'N/A') + '</span>';
+              html += '      <span class="price">💰 ' + (product.sale_price ? product.sale_price.toLocaleString() + '원' : 'N/A') + '</span>';
+              html += '      <span class="shop">🏪 ' + product.shop_name + '</span>';
+              html += '    </div>';
+              html += '  </div>';
+              html += rankBadge;
               html += '</div>';
             });
           } else {
@@ -173,6 +307,7 @@
               console.log('원형 차트 클릭 - 카테고리:', clickedCategory, '상품 수:', productCount);
               showCategoryProducts(clickedCategory, productCount);
             });
+
           }
 
         // 브라우저 크기 변화 감지 및 차트 리사이즈
