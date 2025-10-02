@@ -3,9 +3,11 @@
 import json
 
 from django.shortcuts import render
-from common.models import NutriScopeData
+
 import plotly.graph_objs as go
 import plotly.utils
+
+from .models import CategoryData
 
 
 # 색상 팔레트
@@ -28,38 +30,6 @@ COLOR_PALETTE = [
     "#A9DFBF",
     "#F9E79F",
 ]
-
-
-# 데이터 처리 함수들
-def get_category_data():
-    """카테고리별 상품 데이터를 가져오는 함수"""
-    categories = [
-        "프로틴",
-        "유산균/프로바이오틱",
-        "비타민",
-        "홍삼/인삼",
-        "마그네슘",
-        "기타",
-        "오메가3",
-        "효소",
-        "녹즙/주스",
-        "꿀",
-        "콜라겐",
-        "기타 건강식품",
-        "루테인",
-        "비오틴",
-        "아연",
-        "칼슘",
-        "밀크씨슬",
-    ]
-
-    data = {}
-    for category in categories:
-        data[category] = NutriScopeData.objects.filter(
-            category=category
-        ).order_by("rank")
-
-    return data
 
 
 def create_chart_data(data):
@@ -167,7 +137,7 @@ def prepare_detailed_data(data):
 def index(request):
     """카테고리 대시보드 메인 뷰"""
     # 데이터 가져오기
-    data = get_category_data()
+    data = CategoryData.get_category_data()
 
     # 차트 생성
     chart_json = create_chart_data(data)
