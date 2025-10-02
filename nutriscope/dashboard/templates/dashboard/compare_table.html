@@ -19,8 +19,9 @@
                 <nav class="main-nav">
                     <a href="{% url 'dashboard' %}" class="nav-item">대시보드</a>
                     <a href="{% url 'product_comparison' %}" class="nav-item">상품목록</a>
-                    <a href="{% url 'compare_table' %}" class="nav-item">상품비교</a>
+                    <a href="{% url 'compare_table' %}" class="nav-item active">상품비교</a>
                     <a href="{% url 'base' %}" class="nav-item">상품리스트</a>
+                    <a href="{% url 'category_price' %}" class="nav-item">카테고리별 보기</a>
                 </nav>
             </div>
             <div class="header-subtitle">
@@ -31,7 +32,6 @@
             
             <!-- 서브 텍스트 (선택사항) -->
             <div class="header-subtitle">
-                <p>쇼핑몰 크롤링 데이터 분석 결과를 한눈에 확인하세요</p>
                 <div class="chart-section">
                 <h2 class="section-title">상품 가격 비교</h2>
                     <!-- 입력 폼 -->

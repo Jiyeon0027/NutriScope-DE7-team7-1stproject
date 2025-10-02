@@ -1,11 +1,12 @@
-from django.shortcuts import render
 import pandas as pd
+import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
 import plotly.utils
 import plotly
 import json
 import os
+from django.shortcuts import render
 from django.db import models
 from django.conf import settings
 from dashboard.models import Product
@@ -178,13 +179,17 @@ def product_comparison(request):
     context = {}
     return render(request, 'dashboard/product_comparison.html', context)
 
-def product_list_api(request):
-    # queryset = Product.objects.all().values()
-    # df = pd.DataFrame(list(queryset))
+# def product_list_api(request):
     # id 순으로 정렬
-    products = list(Product.objects.all().order_by('id').values('id', 'shop_name', 'product_name', 'brand_name','sale_price', 'image_url', 'quantity'))
-    return JsonResponse(products, safe=False)
+    # products = list(Product.objects.all().order_by('id').values('id', 'shop_name', 'product_name', 'brand_name','sale_price', 'image_url', 'quantity'))
+    # return JsonResponse(products, safe=False)
 
+def product_list_api(request):
+    products = list(Product.objects.all().order_by('id').values(
+        'id', 'shop_name', 'product_name', 'brand_name',
+        'sale_price', 'image_url', 'quantity', 'category'  # ← category 추가!
+    ))
+    return JsonResponse(products, safe=False)
 #################################  compare table  ##################################
 def compare_table(request):
     brand = request.GET.get('brand', '').strip()
@@ -269,3 +274,60 @@ def base_view(request):
     }
 
     return render(request, 'dashboard/base.html', context)
+
+############################ d3 dashboard #######################################
+def category_price_view(request):
+    """카테고리-가격 분석 페이지"""
+    return render(request, "dashboard/category_price.html")
+
+def get_treemap_data(request):
+    """트리맵 데이터: 카테고리별 제품 수"""
+    category_counts = df['category'].value_counts().reset_index()
+    category_counts.columns = ['category', 'count']
+    
+    treemap_data = []
+    for _, row in category_counts.iterrows():
+        treemap_data.append({
+            "category": row['category'],
+            "value": int(row['count'])
+        })
+    
+    return JsonResponse(treemap_data, safe=False)
+
+def get_barchart_data(request):  # category 파라미터 제거
+    """바차트 데이터: 가격대별 제품 수"""
+    # GET 쿼리 파라미터로 카테고리 받기
+    category = request.GET.get('category', 'All')
+    
+    # 카테고리 필터링
+    if category == "All":
+        filtered_df = df.copy()
+    else:
+        filtered_df = df[df['category'] == category].copy()
+    
+    # 가격대 구간 설정
+    bins = [0, 15000, 25900, 41700, float('inf')]
+    labels = ["저가", "중저가", "중고가", "고가"]
+    
+    # 가격대 그룹화
+    filtered_df['price_range'] = pd.cut(
+        filtered_df['sale_price'], 
+        bins=bins, 
+        labels=labels, 
+        right=True
+    )
+    
+    # 각 가격대별 카운트
+    price_counts = filtered_df['price_range'].value_counts().sort_index()
+    
+    # 모든 가격대가 포함되도록 보장
+    barchart_data = []
+    for label in labels:
+        count = price_counts.get(label, 0)
+        barchart_data.append({
+            "category": label,
+            "value": int(count),
+            "group": category
+        })
+    
+    return JsonResponse(barchart_data, safe=False)
