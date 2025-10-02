@@ -1,26 +1,21 @@
-<div class="header">
-    <div class="header-content">
+    <div class="header">
+      <div class="header-content">
         <div class="header-wrapper">
-            <div class="logo-section">
-                <span class="project-name">NutriScope</span>
-            </div>
+          <div class="logo-section">
+            <span class="project-name">NutriScope</span>
+          </div>
+          <nav class="main-nav">
+            <a href="{% url 'dashboard' %}" class="nav-item avtive">대시보드</a>
+            <a href="{% url 'product_comparison' %}" class="nav-item">상품목록</a>
+            <a href="{% url 'compare_table' %}" class="nav-item">상품비교</a>
+            <a href="{% url 'base' %}" class="nav-item">상품리스트</a>
+            <a href="{% url 'category_price' %}" class="nav-item">카테고리별 보기</a>
+            <a href="{% url 'mylist' %}" class="nav-item">랭킹</a>
+            <a href="{% url 'category:index' %}" class="nav-item">카테고리 분석</a>
+          </nav>
         </div>
         <div class="header-subtitle">
-            <!-- 간단한 소개글 써주면 좋아요-->
-            <p>쇼핑몰 크롤링 데이터 분석 결과를 한눈에 확인하세요</p>
+          <p>쇼핑몰 크롤링 데이터 분석 결과를 한눈에 확인하세요</p>
         </div>
+      </div>
     </div>
-</div>
-
-{% comment %} 
-<div style = "text-align:center; margin-bottom:2px;">
-    <div>
-        <h1>💊 NutriScope</h1>
-    </div>
-    <div>
-        <span>nav1</span>
-        <span>nav2</span>
-        <span>nav3</span>
-    </div>
-</div> 
-{% endcomment %}

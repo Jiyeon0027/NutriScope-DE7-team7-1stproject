@@ -133,17 +133,12 @@
           </div>
           <nav class="main-nav">
             <a href="{% url 'dashboard' %}" class="nav-item">대시보드</a>
-            <a href="{% url 'product_comparison' %}" class="nav-item active"
-              >상품목록</a
-            >
+            <a href="{% url 'product_comparison' %}" class="nav-item active">상품목록</a>
             <a href="{% url 'compare_table' %}" class="nav-item">상품비교</a>
             <a href="{% url 'base' %}" class="nav-item">상품리스트</a>
-            <a href="{% url 'category_price' %}" class="nav-item"
-              >카테고리별 보기</a
-            >
-            <a href="{% url 'category:index' %}" class="nav-item"
-              >카테고리 분석</a
-            >
+            <a href="{% url 'category_price' %}" class="nav-item">카테고리별 보기</a>
+            <a href="{% url 'mylist' %}" class="nav-item">랭킹</a>
+            <a href="{% url 'category:index' %}" class="nav-item">카테고리 분석</a>
           </nav>
         </div>
         <div class="header-subtitle">
