@@ -1,0 +1,150 @@
+{% extends 'ranking/base.html' %}
+
+{% block content %}
+<body>
+    <div class="parent">
+        <div class="left-content">
+            <div class="card">
+                <div class="card-header">
+                    🏆 종 합 순 위🏆 
+                </div>
+                
+                <div class="card-body">
+                    {% if page_obj %}
+                        {% for i in page_obj %}
+                            <div class="ranking-item" 
+                                data-representative-name="{{ i.representative_name }}"
+                                onclick="loadProductDetails(this)">
+                                <div class="rank-number">
+                                    {{ i.rank }}
+                                </div>
+                                <div class="rank-text">
+                                    {{ i.category }} | {{ i.representative_name }}
+                                </div>
+                            </div>
+                        {% endfor %}
+
+                        <!-- 페이지네이션 -->
+                        {% if page_obj.has_other_pages %}
+                            <div class="pagination">
+                                {% if page_obj.has_previous %}
+                                    <a href="?page=1">&laquo; 처음</a>
+                                    <a href="?page={{ page_obj.previous_page_number }}">이전</a>
+                                {% endif %}
+                                
+                                {% for num in page_obj.paginator.page_range %}
+                                    {% if page_obj.number == num %}
+                                        <span class="current">{{ num }}</span>
+                                    {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                                        <a href="?page={{ num }}">{{ num }}</a>
+                                    {% endif %}
+                                {% endfor %}
+                                
+                                {% if page_obj.has_next %}
+                                    <a href="?page={{ page_obj.next_page_number }}">다음</a>
+                                    <a href="?page={{ page_obj.paginator.num_pages }}">마지막 &raquo;</a>
+                                {% endif %}
+                            </div>
+                        {% endif %}
+
+                    {% else %}
+                        <div style="text-align: center; padding: 2rem; color: #666;">
+                            <p>순위 데이터가 없습니다.</p>
+                        </div>
+                    {% endif %}    
+                </div>
+            </div>
+        </div>
+        
+        <div class="right-content" id="rightContent">
+            <div class="placeholder-message">
+                💡 비교하고 싶은 제품을 선택하세요.
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // 제품 상세 정보 로드 함수
+        function loadProductDetails(element) {
+            // 모든 ranking-item에서 active 클래스 제거
+            document.querySelectorAll('.ranking-item').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // 클릭한 항목에 active 클래스 추가
+            element.classList.add('active');
+            const representativeName = element.getAttribute('data-representative-name');
+            const rightContent = document.getElementById('rightContent');
+
+            // 로딩 표시
+            rightContent.innerHTML = '<div class="loading">제품 정보를 불러오는 중...</div>';
+
+            // AJAX 요청
+            fetch(`/ranking/api/product-details/?representative_name=${encodeURIComponent(representativeName)}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        rightContent.innerHTML = `<div class="placeholder-message">❌ ${data.error}</div>`;
+                        return;
+                    }
+                    
+                    // data가 제대로 들어오면, 제품 상세 정보 표시 함수 실행
+                    displayProductDetails(data);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    rightContent.innerHTML = '<div class="placeholder-message">❌ 데이터를 불러오는데 실패했습니다.</div>';
+                });
+        }
+        
+        // 제품 상세 정보 표시 함수
+        function displayProductDetails(data) {
+            const rightContent = document.getElementById('rightContent');
+            let html = `
+                <div class="product-detail-header">
+                    <h3>📦 ${data.representative_name}</h3>
+                    <p style="color: #666; margin-top: 5px;">총 ${data.products.length}개의 제품</p>
+                </div>
+            `;
+
+            data.products.forEach(product => {
+                // 할인율 계산
+                let discountHtml = '';
+                if (product.original_price && product.original_price > product.sale_price) {
+                    const discountRate = Math.round((1 - product.sale_price / product.original_price) * 100);
+                    discountHtml = `<span class="discount-rate">${discountRate}%</span>`;
+                }
+            
+                html += `
+                    <div class="product-card">
+                        <div class="product-header">
+                            ${product.image_url 
+                                ? `<img src="${product.image_url}" alt="${product.product_name}" class="product-image">`
+                                : `<div class="product-image-placeholder">이미지<br>없음</div>`
+                            }
+                            <div class="product-info">
+                                <span class="shop-badge">${product.shop_name}</span>
+                                <div class="product-name">${product.product_name}</div>
+                                <div class="brand-name">${product.brand_name || '브랜드 정보 없음'}</div>
+                                <div class="quantity">${product.quantity || '용량 정보 없음'}</div>
+                            </div>
+                        </div>
+                        <div class="product-price">
+                            ${product.original_price 
+                                ? `<span class="original-price">${product.original_price.toLocaleString()}원</span>`
+                                : ''
+                            }
+                            <span class="sale-price">${product.sale_price.toLocaleString()}원</span>
+                            ${discountHtml}
+                        </div>
+                    </div>
+                `;
+            });
+            
+            rightContent.innerHTML = html;
+
+        }
+    </script>
+</body>
+
+{% endblock %}

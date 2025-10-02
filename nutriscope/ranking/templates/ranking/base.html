@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}NutriScope - 영양제 종합 순위{% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'ranking/style.css' %}">
+    </head>
+
+    <body>
+        {% include 'ranking/header.html' %}
+        <hr>
+
+        {% block content %}
+        {% endblock %}
+        <hr>
+
+    </body>
+</html>
