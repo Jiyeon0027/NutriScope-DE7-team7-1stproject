@@ -98,6 +98,7 @@ class Brand():
         '''
         # args는 brand_name 필요하고, 데이터는 brand_name의 카테고리, count가 필요
         results = FamousData.get_brand_data_detail(self.brand_name, "category")
+        print(results)
         values = []
         names = []
 
@@ -105,9 +106,18 @@ class Brand():
             values.append(result.get("count"))
             names.append(result.get("category"))
 
-        fig = px.pie(values=values, names=names)
-        fig.update_traces(textinfo='label+percent')
-        graph_json = fig.to_json()
+        fig = go.Figure(data=[
+            go.Pie(
+                labels = names,
+                values = values,
+                hole = 0.4
+            )
+            ])
+        fig.update_layout(
+            height = 632,
+            width = 632
+        )
 
-        return graph_json
-    
+        fig = fig.to_json()
+
+        return fig
