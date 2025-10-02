@@ -18,7 +18,9 @@ class NutriScopeData(models.Model):
     image_url = models.CharField(max_length=500, null=True, blank=True)
     rank = models.IntegerField()
     category = models.CharField(max_length=30)
-    representative_name = models.CharField(max_length=100, null=True, blank=True)
+    representative_name = models.CharField(
+        max_length=100, null=True, blank=True
+    )
     total_rank = models.IntegerField(null=True, blank=True)
 
     def __str__(self):

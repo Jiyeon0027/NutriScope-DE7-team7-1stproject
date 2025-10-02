@@ -19,6 +19,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    path("", include("dashboard.urls")),  # dashboard 앱의 urls를 포함
     path("admin/", admin.site.urls),
     path("ranking/", include("ranking.urls")),
     path(

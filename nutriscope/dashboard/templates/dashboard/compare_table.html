@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriScope - 대시보드</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'dashboard/style.css' %}">
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div class="header-wrapper">
+                <div class="logo-section">
+                    <span class="project-name">NutriScope</span>
+                </div>
+                <nav class="main-nav">
+                    <a href="{% url 'dashboard' %}" class="nav-item">대시보드</a>
+                    <a href="{% url 'product_comparison' %}" class="nav-item">상품목록</a>
+                    <a href="{% url 'compare_table' %}" class="nav-item active">상품비교</a>
+                    <a href="{% url 'base' %}" class="nav-item">상품리스트</a>
+                    <a href="{% url 'category_price' %}" class="nav-item">카테고리별 보기</a>
+                </nav>
+            </div>
+            <div class="header-subtitle">
+                <p>쇼핑몰 크롤링 데이터 분석 결과를 한눈에 확인하세요</p>
+            </div>
+        </div>
+    </div>
+            
+            <!-- 서브 텍스트 (선택사항) -->
+            <div class="header-subtitle">
+                <div class="chart-section">
+                <h2 class="section-title">상품 가격 비교</h2>
+                    <!-- 입력 폼 -->
+                    <form method="get" action="{% url 'compare_table' %}" style="margin-bottom:20px;">
+                        <label>브랜드명: 
+                            <input type="text" name="brand" value="{{ brand }}">
+                        </label>
+                        <label>상품명: 
+                            <input type="text" name="product_name" value="{{ product_name }}">
+                        </label>
+                        <label>쇼핑몰명: 
+                            <input type="text" name="shop_name" value="{{ shop_name }}">
+                        </label>
+                        <button type="submit" class="btn btn-primary">표로 보기</button>
+                    </form>
+
+                    {% if products %}
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>브랜드</th>
+                                    <th>상품명</th>
+                                    <th>분량</th>
+                                    <th>쇼핑몰</th>
+                                    <th>가격</th>
+                                    <th>카테고리</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for p in products %}
+                                <tr>
+                                    <td>{{ p.id }}</td>
+                                    <td>{{ p.brand_name }}</td>
+                                    <td>{{ p.product_name }}</td>
+                                    <td>{{ p.quantity }}</td>
+                                    <td>{{ p.shop_name }}</td>
+                                    <td>{{ p.sale_price }}원</td>
+                                    <td>{{ p.category }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    {% else %}
+                        <p>조건에 맞는 상품이 없습니다.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- 통계 카드 그리드 -->
+
+    </div>
+
+</body>
+</html>
