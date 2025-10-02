@@ -24,4 +24,5 @@ urlpatterns = [
     path(
         "famous_brand/", include("famous_brand.urls")
     ),  # famous_brand App에 대한 url 경로 설정
+    path("category/", include("category.urls", namespace="category")),
 ]

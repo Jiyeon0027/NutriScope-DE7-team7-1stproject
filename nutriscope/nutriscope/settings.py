@@ -39,9 +39,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "rest_framework",
     "common",  # 공통 모듈 앱 추가
     "ranking",
     "famous_brand",  # famous_brand 앱 추가
+    "category",  # category 앱 추가
 ]
 
 MIDDLEWARE = [

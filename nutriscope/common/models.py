@@ -22,4 +22,7 @@ class NutriScopeData(models.Model):
     total_rank = models.IntegerField(null=True, blank=True)
 
     def __str__(self):
-        return f"{self.display_name} - {self.brand_name} - {self.category}"
+        return (
+            f"{self.id} - {self.product_name} - {self.brand_name} "
+            + f"- {self.category}"
+        )
