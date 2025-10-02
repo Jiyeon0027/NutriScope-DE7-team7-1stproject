@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "common",  # 공통 모듈 앱 추가
     "ranking",
+    "famous_brand",  # famous_brand 앱 추가
 ]
 
 MIDDLEWARE = [
