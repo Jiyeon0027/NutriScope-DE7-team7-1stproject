@@ -123,20 +123,22 @@
                                 : `<div class="product-image-placeholder">이미지<br>없음</div>`
                             }
                             <div class="product-info">
-                                <span class="shop-badge">${product.shop_name}</span>
+                                <div class="badge-container">
+                                    <span class="shop-badge">${product.shop_name}</span>
+                                    <span class="brand-name">${product.brand_name || '브랜드 정보 없음'}</span>
+                                </div>
                                 <div class="product-name">${product.product_name}</div>
-                                <div class="brand-name">${product.brand_name || '브랜드 정보 없음'}</div>
-                                <div class="quantity">${product.quantity || '용량 정보 없음'}</div>
+                                <div class="display-name">${product.display_name}</div>
                             </div>
-                        </div>
-                        <div class="product-price">
-                            ${product.original_price 
-                                ? `<span class="original-price">${product.original_price.toLocaleString()}원</span>`
-                                : ''
-                            }
-                            <span class="sale-price">${product.sale_price.toLocaleString()}원</span>
-                            ${discountHtml}
-                        </div>
+                            <div class="product-price">
+                                ${product.original_price 
+                                    ? `<span class="original-price">${product.original_price.toLocaleString()}원</span>`
+                                    : ''
+                                }
+                                <span class="sale-price">${product.sale_price.toLocaleString()}원</span>
+                                ${discountHtml}
+                            </div>
+                        </div> 
                     </div>
                 `;
             });
@@ -146,5 +148,6 @@
         }
     </script>
 </body>
-
+{% comment %} <div class="brand-name">${product.brand_name || '브랜드 정보 없음'}</div> {% endcomment %}
+{% comment %} <div class="quantity">${product.quantity || '용량 정보 없음'}</div> {% endcomment %}
 {% endblock %}

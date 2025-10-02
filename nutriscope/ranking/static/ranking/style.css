@@ -441,12 +441,16 @@ body {
 }
 
 .ranking-item.active .rank-number {
-    color: white;
+    color: #667eea;
 }
 
 .rank-text {
     color: #374151;
     font-size: 0.95rem;
+}
+
+.ranking-item.active .rank-text {
+    color: white;
 }
 
 .pagination {
@@ -546,12 +550,27 @@ body {
     flex: 1;
 }
 
-/* 쇼핑몰 배지 */
+.badge-container {
+    display: flex;
+    gap: 8px;                /* 배지 간 간격 */
+    flex-wrap: wrap;         /* 공간 부족시 줄바꿈 */
+}
+
 .shop-badge {
     display: inline-block;
     background: #374151;
     color: white;
-    padding: 4px 9px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+}
+
+.brand-name {
+    display: inline-block;
+    background: rgb(150, 148, 188);
+    color: white;
+    padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.8rem;
     margin-bottom: 8px;
@@ -562,16 +581,22 @@ body {
     font-size: 1.1rem;
     font-weight: 600;
     color: #111827;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
+    margin-top: 3px;
 }
 
-.brand-name {
+/* .brand-name {
     color: #6b7280;
     font-size: 0.95rem;
     margin-bottom: 5px;
-}
+} */
 
 .quantity {
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+.display-name {
     color: #9ca3af;
     font-size: 0.9rem;
 }
@@ -581,8 +606,9 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding-top: 10px;
-    border-top: 1px solid #f3f4f6;
+    padding-top: 5px;
+    padding-left: 10px;
+    border-left: 2px solid #f3f4f6;
 }
 
 .original-price {
