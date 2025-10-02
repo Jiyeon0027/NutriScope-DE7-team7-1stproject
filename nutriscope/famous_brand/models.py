@@ -7,7 +7,7 @@ class FamousData(NutriScopeData):
     class Meta:
         proxy = True
     
-    def get_grouped_field_data(groupfield: str):
+    def get_grouped_field_data(groupfield: str, nums: int):
         '''
         ## args를 group by로 조회하고, args가 나온 횟수를 count하여 보여줌\n
         args: \n
@@ -19,7 +19,7 @@ class FamousData(NutriScopeData):
                     .values(groupfield)\
                     .annotate(count=Count(groupfield))\
         
-        data_list = data_list.order_by("-count")[:5]
+        data_list = data_list.order_by("-count")[:nums]
 
         return  data_list
     
