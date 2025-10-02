@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from . import views
 
 urlpatterns = [
@@ -18,4 +18,5 @@ urlpatterns = [
     # API 엔드포인트
     path('api/get_treemap_data/', views.get_treemap_data, name='get_treemap_data'),
     path('api/get_barchart_data/', views.get_barchart_data, name='get_barchart_data'),
+    path('famous_brand/', include('famous_brand.urls')) # famous_brand App에 대한 url 경로 설정
 ]
