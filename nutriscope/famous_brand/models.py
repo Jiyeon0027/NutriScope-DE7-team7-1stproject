@@ -3,7 +3,7 @@ from common.models import *
 from django.db.models import Count
 # Create your models here.
 
-class FamousData(NutriScopeData):
+class BrandData(NutriScopeData):
     class Meta:
         proxy = True
     
@@ -36,3 +36,19 @@ class FamousData(NutriScopeData):
         grouped_brand_data_list = brand_data_list.values(groupfield).annotate(count=Count(groupfield))
 
         return grouped_brand_data_list
+    
+    def get_brand_data_table(brand_name: str):
+        '''
+        ## brand_name을 받아 해당 브랜드에 속해있는 모든 정보를 가져와 테이블에 사용할 필드의 데이터를 반환\n
+        args:\n
+            brnad_name: 검색하고자 하는 브랜드 이름
+        return: NutriScopeData 테이블의 해당 브랜드 명으로 등록된 필드의 테이블 용 데이터
+        '''
+
+        brand_data_list = NutriScopeData.objects.filter(brand_name=brand_name)
+        filterd_brand_data_list = brand_data_list.values("image_url", "brand_name", "product_name", "shop_name", "rank")
+        # brand_data_list = NutriScopeData.objects.values("image_url", "brand_name", "product_name", "rank")
+        rank_ordered_data = filterd_brand_data_list.order_by("rank")
+
+        return rank_ordered_data
+    

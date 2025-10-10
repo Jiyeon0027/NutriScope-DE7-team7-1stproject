@@ -11,6 +11,147 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="{% static 'dashboard/style.css' %}" />
+    <style>
+            .search-controls {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin-bottom: 1.5rem;
+      }
+
+      .form-control,
+      .form-select {
+        padding: 0.75rem 1rem;
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        font-size: 0.875rem;
+        background: white;
+        transition: all 0.2s ease;
+      }
+
+      .form-control {
+        flex: 1;
+      }
+
+      .form-select {
+        min-width: 150px;
+      }
+
+      .form-control:focus,
+      .form-select:focus {
+        outline: none;
+        border-color: #0064ff;
+        box-shadow: 0 0 0 3px rgba(0, 100, 255, 0.1);
+      }
+      .btn {
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 10px;
+        font-size: 0.875rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .btn-secondary {
+        background: #0064ff;
+        color: white;
+      }
+
+      .btn-secondary:hover {
+        background: #0052cc;
+        transform: translateY(-1px);
+      }
+
+      .btn-outline-secondary {
+        background: white;
+        color: #6b7280;
+        border: 1px solid #e5e7eb;
+      }
+
+      .btn-outline-secondary:hover:not(:disabled) {
+        background: #f9fafb;
+        border-color: #0064ff;
+        color: #0064ff;
+      }
+
+      .btn-outline-secondary:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      .product-card {
+        background: white;
+        border-radius: 16px;
+        padding: 1.5rem;
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        border: 1px solid rgba(0, 0, 0, 0.04);
+        transition: all 0.3s ease;
+      }
+
+      .product-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+      }
+
+      .product-image-wrapper {
+        flex-shrink: 0;
+        width: 200px;
+      }
+
+      .product-image-wrapper img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        border-radius: 10px;
+        background: #f9f9f9;
+      }
+
+      .product-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .product-info h3 {
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: #191f28;
+        margin-bottom: 0.75rem;
+      }
+
+      .product-info p {
+        font-size: 0.875rem;
+        color: #6b7280;
+        margin: 0.25rem 0;
+      }
+
+      .product-info strong {
+        color: #191f28;
+        font-weight: 600;
+      }
+
+      .pagination-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .pagination-info {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #191f28;
+        padding: 0.5rem 1rem;
+        background: #f3f4f6;
+        border-radius: 8px;
+      }
+    </style>
   </head>
   <body>
     <div class="header">
@@ -21,17 +162,12 @@
           </div>
           <nav class="main-nav">
             <a href="{% url 'dashboard' %}" class="nav-item">대시보드</a>
-            <a href="{% url 'product_comparison' %}" class="nav-item"
-              >상품목록</a
-            >
+            <a href="{% url 'product_comparison' %}" class="nav-item">상품목록</a>
             <a href="{% url 'compare_table' %}" class="nav-item">상품비교</a>
             <a href="{% url 'base' %}" class="nav-item active">상품리스트</a>
-            <a href="{% url 'category_price' %}" class="nav-item"
-              >카테고리별 보기</a
-            >
-            <a href="{% url 'category:index' %}" class="nav-item"
-              >카테고리 분석</a
-            >
+            <a href="{% url 'category_price' %}" class="nav-item">카테고리별 보기</a>
+            <a href="{% url 'mylist' %}" class="nav-item">랭킹</a>
+            <a href="{% url 'category:index' %}" class="nav-item">카테고리 분석</a>
           </nav>
         </div>
         <div class="header-subtitle">
@@ -92,7 +228,7 @@
             type="text"
             class="form-control"
             id="search-title"
-            placeholder="Enter product name"
+            placeholder="상품명, 브랜드, 쇼핑몰 검색"
           />
           <select id="sort-select" class="form-select">
             <option value="id-asc" selected>ID 오름차순</option>
@@ -100,19 +236,20 @@
             <option value="price-asc">가격 오름차순</option>
             <option value="price-desc">가격 내림차순</option>
           </select>
-          <button class="btn btn-secondary" id="search-btn">Search</button>
+          <button class="btn btn-secondary" id="search-btn">검색</button>
         </div>
 
         <div id="product-list"></div>
-        <div id="pagination-info" class="text-center mt-3"></div>
-        <div class="text-center">
-          <button id="previous" class="btn btn-outline-secondary">
-            Previous
-          </button>
-          <button id="next" class="btn btn-outline-secondary">Next</button>
+
+        <div class="pagination-container">
+          <button class="btn btn-outline-secondary" id="previous">이전</button>
+          <span class="pagination-info" id="pagination-info">1 / 1</span>
+          <button class="btn btn-outline-secondary" id="next">다음</button>
         </div>
       </div>
+      </div>
     </div>
+
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
@@ -211,20 +348,22 @@
 
           document.getElementById('search-btn').addEventListener('click', function() {
               const keyword = document.getElementById('search-title').value.trim().toLowerCase();
-              products = keyword ? allProducts.filter(p =>
-                  p.product_name.toLowerCase().includes(keyword) ||
-                  p.brand_name.toLowerCase().includes(keyword) ||
-                  p.shop_name.toLowerCase().includes(keyword)
-              ) : [...allProducts];
 
-              const sortOption = document.getElementById('sort-select').value;
-              sortProducts(sortOption);
+              // 검색어 없으면 전체 데이터
+              products = keyword 
+                  ? allProducts.filter(p =>
+                      (p.product_name || '').toLowerCase().includes(keyword) ||
+                      (p.brand_name || '').toLowerCase().includes(keyword) ||
+                      (p.shop_name || '').toLowerCase().includes(keyword)
+                  ) 
+                  : [...allProducts];
 
               currentPage = 1;
               totalPages = Math.ceil(products.length / itemsPerPage);
               displayProductsForPage(currentPage);
-              updateStatsAndChart(products);
+              updateStatsAndChart(products); // 통계/그래프도 갱신
           });
+
 
           document.getElementById('sort-select').addEventListener('change', function() {
               sortProducts(this.value);

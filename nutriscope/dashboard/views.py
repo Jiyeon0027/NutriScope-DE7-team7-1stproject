@@ -11,7 +11,7 @@ from django.conf import settings
 from dashboard.models import Product
 from django.http import JsonResponse
 from django.db.models import Avg, Count
-from famous_brand.controllers import *
+from famous_brand.chartbuilder import *
 queryset = Product.objects.all().values()
 df = pd.DataFrame(list(queryset))
 def dashboard_view(request):
@@ -22,10 +22,10 @@ def dashboard_view(request):
     # 데이터 로드
     #df = pd.read_json(json_path)
     
-    print("=== 데이터 확인 ===")
-    print(f"전체 행 수: {len(df)}")
-    print(f"컬럼: {df.columns.tolist()}")
-    print(f"브랜드 샘플: {df['brand_name'].head()}")
+    # print("=== 데이터 확인 ===")
+    # print(f"전체 행 수: {len(df)}")
+    # print(f"컬럼: {df.columns.tolist()}")
+    # print(f"브랜드 샘플: {df['brand_name'].head()}")
     
     # 1. 가격 분포 히스토그램
     fig_histogram = go.Figure(data=[
@@ -66,8 +66,8 @@ def dashboard_view(request):
     # 3. 인기 브랜드 Top 10
 
     brand_name = request.GET.get("brand_name", "brand_name") # query가 있을경우 "brand_name"을 인자로 받는다. 없을경우 "brand_name"을 default로 리턴
-    brand_graph_bar = Brand(brand_name).draw_top_chart('bar')
-    brand_graph_pie = Brand(brand_name).draw_top_chart('pie')
+    brand_graph_bar = Brand().draw_top_chart(chart_type='bar')
+    brand_graph_pie = Brand().draw_top_chart(chart_type='pie')
 
     '''
     n = 10
@@ -118,8 +118,8 @@ def dashboard_view(request):
     # 4. 카테고리별 상품 수
     category_counts = df['category'].value_counts()
     
-    print(f"\n=== 카테고리 ===")
-    print(category_counts)
+    # print(f"\n=== 카테고리 ===")
+    # print(category_counts)
     
     # 카테고리 막대 그래프
     fig_category_bar = go.Figure(data=[
@@ -164,8 +164,8 @@ def dashboard_view(request):
         'total_categories': df['category'].nunique(),
     }
     
-    print(f"\n=== 통계 ===")
-    print(stats)
+    # print(f"\n=== 통계 ===")
+    # print(stats)
     
     # JSON으로 변환 (safe하게)
     context = {
@@ -197,6 +197,7 @@ def product_list_api(request):
         'sale_price', 'image_url', 'quantity', 'category'  # ← category 추가!
     ))
     return JsonResponse(products, safe=False)
+
 #################################  compare table  ##################################
 def compare_table(request):
     brand = request.GET.get('brand', '').strip()
