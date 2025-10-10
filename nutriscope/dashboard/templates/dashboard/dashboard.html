@@ -164,7 +164,8 @@
         const brandPieData = JSON.parse('{{ brand_pie_json|escapejs }}');
         const categoryBarData = JSON.parse('{{ category_bar_json|escapejs }}');
         const categoryTreeData = JSON.parse('{{ category_tree_json|escapejs }}');
-        const charDiv = document.getElementById('brand-bar');
+        const barChartDiv = document.getElementById('brand-bar');
+        const pieChartDiv = document.getElementById('brand-pie');
 
         const commonConfig = {
           responsive: true,
@@ -179,9 +180,8 @@
         if (categoryBarData && categoryBarData.data) Plotly.newPlot('category-bar', categoryBarData.data, categoryBarData.layout, commonConfig);
         if (categoryTreeData && categoryTreeData.data) Plotly.newPlot('category-tree', categoryTreeData.data, categoryTreeData.layout, commonConfig);
 
-        charDiv.on('plotly_click', function(data) {
+        barChartDiv.on('plotly_click', function(data) {
             let brand_name = data.points[0].y;
-            console.log(brand_name)
             const modal = new bootstrap.Modal(document.getElementById('brandDetailModal'));
             const modalEl = document.getElementById('brandDetailModal');
             // 모달 열기
@@ -193,7 +193,6 @@
             axios.get(`/famous_brand/detail/?brand_name=${brand_name}`)
                     .then(function (response) {
                         let graphJson = response.data;
-                        console.log(response)
 
                         // 모달 내부 div 비우고 새로운 그래프 그리기
                         let detailDiv = document.getElementById('brandDetailChart');
@@ -204,6 +203,50 @@
                     .catch(function (error) {
                         console.error(error);
                         document.getElementById('brandDetailChart').innerHTML = "그래프 로드 실패";
+                    })
+
+        })
+
+        pieChartDiv.on('plotly_click', function(data) {
+            let brand_name = data.points[0].label;
+  
+            const modal = new bootstrap.Modal(document.getElementById('brandDetailModal'));
+            const modalEl = document.getElementById('brandDetailModal');
+            // 모달 열기
+            modal.show();
+
+            // 모달 제목 업데이트
+            document.getElementById('brandDetailModalLabel').innerText = `${brand_name} - 제품 추이`;
+
+            axios.get(`/famous_brand/detail/?brand_name=${brand_name}&product_detail=True`)
+                    .then(function (response) {
+                        let tableData = response.data;
+
+                        // 모달 내부 div 비우고 새로운 그래프 그리기
+                        let detailDiv = document.getElementById('brandDetailChart');
+                        detailDiv.innerHTML = "";
+                        
+                        let tableHTML = "<table border='1' cellspacing='0' cellpadding='5' style='border-collapse:collapse; width: 766px; table-layout: fixed; text-align: center;'>";
+                        tableHTML += "<tr><th style='border: 1px solid black;'>제품이미지</th><th style='border: 1px solid black;'>브랜드</th><th style='border: 1px solid black;'>제품명</th><th style='border: 1px solid black;'>판매처</th><th style='border: 1px solid black;'>랭킹</th></tr>";
+                        
+                        for (let i = 0; i < tableData.length; i++) {
+                          tableHTML += "<tr>";
+                          tableHTML += `<td th style='border: 1px solid black;'><img src=${tableData[i].image_url} width="97", height="97"></td>`;
+                          tableHTML += `<td th style='border: 1px solid black;'>${tableData[i].brand_name}</td>`;
+                          tableHTML += `<td th style='border: 1px solid black;'>${tableData[i].product_name}</td>`;
+                          tableHTML += `<td th style='border: 1px solid black;'>${tableData[i].shop_name}</td>`;
+                          tableHTML += `<td th style='border: 1px solid black;'>${i+1}</td>`;
+                          tableHTML += "</tr>";
+                        }
+
+                        tableHTML += "</table>";
+                        detailDiv.innerHTML = tableHTML;
+
+                        // Plotly.newPlot(detailDiv, graphJson.data, graphJson.layout);
+                    })
+                    .catch(function (error) {
+                        console.error(error);
+                        document.getElementById('brandDetailChart').innerHTML = "데이터 로드 실패";
                     })
 
         })

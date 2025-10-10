@@ -11,7 +11,7 @@ from django.conf import settings
 from dashboard.models import Product
 from django.http import JsonResponse
 from django.db.models import Avg, Count
-from famous_brand.controllers import *
+from famous_brand.chartbuilder import *
 queryset = Product.objects.all().values()
 df = pd.DataFrame(list(queryset))
 def dashboard_view(request):
@@ -66,8 +66,8 @@ def dashboard_view(request):
     # 3. 인기 브랜드 Top 10
 
     brand_name = request.GET.get("brand_name", "brand_name") # query가 있을경우 "brand_name"을 인자로 받는다. 없을경우 "brand_name"을 default로 리턴
-    brand_graph_bar = Brand(brand_name).draw_top_chart('bar')
-    brand_graph_pie = Brand(brand_name).draw_top_chart('pie')
+    brand_graph_bar = Brand().draw_top_chart(chart_type='bar')
+    brand_graph_pie = Brand().draw_top_chart(chart_type='pie')
 
     '''
     n = 10
